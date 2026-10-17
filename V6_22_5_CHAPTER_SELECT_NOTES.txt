@@ -1,0 +1,12 @@
+TELKİN v6.22.5 — SERBEST BÖLÜM SEÇİMİ
+
+- 1–144 arasındaki herhangi bir bölüm doğrudan oynanabilir.
+- “BU BÖLÜMÜ İNCELE” yerine “BU BÖLÜMÜ OYNA” kullanılır.
+- Tek dokunuşla “1. BÖLÜMDEN OYNA” seçeneği eklendi.
+- Serbest bölüm oyunu ana kaydı değiştirmez; mevcut ilerleme korunur.
+- Serbest modda önceki/sonraki bölüm düğmeleriyle 1–144 arasında dolaşılabilir.
+- “KAYITLI OYUNA DÖN” ile oyuncu kendi kaldığı bölüme geri döner.
+- BÖLÜM SEÇ düğmesi mobilde daha anlaşılır hale getirildi.
+- v6.22.4 yatay kontrol düzeltmesi korunmuştur.
+
+GitHub Desktop: ZIP içeriğini telkin-6.23 klasörünün üzerine kopyala -> Replace -> Commit to main -> Push origin.

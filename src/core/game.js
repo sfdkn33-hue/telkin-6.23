@@ -90,12 +90,16 @@ const hudMenuBtn=document.getElementById('hudMenuBtn'),hudQuickMenu=document.get
 const versionBadge=document.getElementById('versionBadge');
 const cinematicUse=document.getElementById('cinematicUse'),cinUseKicker=document.getElementById('cinUseKicker'),cinUseTitle=document.getElementById('cinUseTitle'),cinUseMeta=document.getElementById('cinUseMeta'),vfLabel=document.getElementById('vfLabel'),cinPhoneState=document.getElementById('cinPhoneState'),cinPhoneName=document.getElementById('cinPhoneName'),cinDocKicker=document.getElementById('cinDocKicker'),cinDocTitle=document.getElementById('cinDocTitle'),cinDocGoal=document.getElementById('cinDocGoal');
 let cinematicUseLastKey='';
-const storyBtn=document.getElementById('storyBtn'),storyPanel=document.getElementById('storyPanel'),storyClose=document.getElementById('storyClose'),storyPanelTitle=document.getElementById('storyPanelTitle'),storyPanelBody=document.getElementById('storyPanelBody');if(versionBadge)versionBadge.textContent='v6.22.4 · YATAY KONTROL DÜZELTMESİ';
+const storyBtn=document.getElementById('storyBtn'),storyPanel=document.getElementById('storyPanel'),storyClose=document.getElementById('storyClose'),storyPanelTitle=document.getElementById('storyPanelTitle'),storyPanelBody=document.getElementById('storyPanelBody');if(versionBadge)versionBadge.textContent='v6.22.5 · SERBEST BÖLÜM SEÇİMİ';
 const chaptersBtn=document.getElementById('chaptersBtn'),chaptersPanel=document.getElementById('chaptersPanel'),chaptersClose=document.getElementById('chaptersClose');
 const volTabs=document.getElementById('volTabs'),chapterGrid=document.getElementById('chapterGrid'),chapterDetail=document.getElementById('chapterDetail');
 const chapterJumpInput=document.getElementById('chapterJumpInput'),chapterJumpGo=document.getElementById('chapterJumpGo'),inspectionBar=document.getElementById('inspectionBar'),inspectionLabel=document.getElementById('inspectionLabel'),inspectionPrev=document.getElementById('inspectionPrev'),inspectionNext=document.getElementById('inspectionNext'),inspectionReturn=document.getElementById('inspectionReturn');
 const locCount=document.getElementById('locCount'),doneCount=document.getElementById('doneCount'),atlasBadge=document.getElementById('atlasBadge');
 const locationsBtn=document.getElementById('locationsBtn'),locationsPanel=document.getElementById('locationsPanel'),locationsClose=document.getElementById('locationsClose');
+if(chaptersBtn)chaptersBtn.textContent=TT('ui.chapterSelect','BÖLÜM SEÇ · 1–144');
+const quickChapterBtn=hudQuickMenu?.querySelector('[data-open="chapters"]');if(quickChapterBtn)quickChapterBtn.textContent=TT('ui.chapterSelect','BÖLÜM SEÇ · 1–144');
+const chapterJumpNote=document.querySelector('.chapterJump em');if(chapterJumpNote)chapterJumpNote.textContent='1–144 arasındaki herhangi bir bölümü doğrudan oynayabilirsin. Kayıtlı ana ilerlemen korunur.';
+if(inspectionReturn)inspectionReturn.textContent='KAYITLI OYUNA DÖN';
 const arcadeBtn=document.getElementById('arcadeBtn'),arcadePanel=document.getElementById('arcadePanel'),arcadeClose=document.getElementById('arcadeClose'),arcadeTitle=document.getElementById('arcadeTitle'),arcadeDesc=document.getElementById('arcadeDesc'),arcadeCanvas=document.getElementById('arcadeCanvas'),arcadeStatus=document.getElementById('arcadeStatus'),arcadeStart=document.getElementById('arcadeStart'),arcadeSkip=document.getElementById('arcadeSkip'),arcadePads=document.getElementById('arcadePads');
 const arcadeEmbed=document.getElementById('arcadeEmbed'),arcadeFrame=document.getElementById('arcadeFrame'),arcadeShelf=document.getElementById('arcadeShelf'),arcadeGenre=document.getElementById('arcadeGenre'),arcadeControl=document.getElementById('arcadeControl');
 const locationSearch=document.getElementById('locationSearch'),locationTabs=document.getElementById('locationTabs'),locationGrid=document.getElementById('locationGrid'),locationActions=document.getElementById('locationActions');
@@ -3899,9 +3903,10 @@ function renderChapterPanel(){
  chapterGrid.innerHTML=list.map(c=>`<button class="chapterCard ${c.n===chapterMenuSelection?'active':''} ${completedChapters.has(c.n)?'done':''}" data-ch="${c.n}"><small>${String(c.n).padStart(3,'0')} · ${c.sourceLabel||('CİLT '+c.vol)}</small><strong>${c.title}</strong><small>${c.route.map(x=>LOC_INFO[x]?.label||x).join(' → ')}</small></button>`).join('');
  chapterGrid.querySelectorAll('.chapterCard').forEach(b=>b.onclick=()=>{chapterMenuSelection=+b.dataset.ch;if(chapterJumpInput)chapterJumpInput.value=chapterMenuSelection;renderChapterPanel();});
  const c=chapterByNo(chapterMenuSelection),route=c.route||[c.loc];
- chapterDetail.innerHTML=`<small>${c.sourceLabel||''}</small><h3>${String(c.n).padStart(3,'0')} · ${c.title}</h3><p>${c.intro}</p><div class="routeRow">${route.map((l,i)=>`<button class="routeChip" data-loc="${l}">${i+1}. ${LOC_INFO[l]?.label||l}</button>`).join('')}</div><p><b>ROTA:</b> ${route.length} mekân · <b>ANA SAHNE:</b> ${chapterSceneRanges(c).length} · <b>MİKRO İZ:</b> ${chapterSequence(c).length} · <b>OYUN MEKANİĞİ:</b> ${(c.mech&&c.mech.title)||'Bölüm akışı'} · <b>SİSTEM:</b> ${chapterSystem(c).systemBrief} · <b>OYUN İMZASI:</b> ${chapterExperience(c).flow}</p><p style="color:#efc77f"><b>ARCADE ÖDÜLÜ:</b> ${chapterArcadeType(c.n)} · ${arcadeDifficultyInfo(c.n).name}. Mini oyunu kazanırsan bölümün ışıklı hedef işaretleri ve yön oku açılır. Oynamazsan hedefi yalnız metre hesabıyla bulabilirsin.</p><p style="color:#efc77f"><b>İNCELEME MODU:</b> Bu bölümün başına istediğin zaman atlayabilirsin. Tamamlama işaretleri ve ana kayıt ilerlemesi değişmez.</p><div class="cActions"><button class="primary" id="startChapter">BU BÖLÜMÜ İNCELE</button><button id="prevChapter">← ÖNCEKİ</button><button id="nextChapterAtlas">SONRAKİ →</button>${inspectionMode?'<button id="returnProgress">İLERLEMEME DÖN</button>':''}${activeAtlas?'<button id="exitAtlas">ANA EVRENE DÖN</button>':''}</div>`;
- chapterDetail.querySelectorAll('.routeChip').forEach(b=>b.onclick=()=>{Game.toast('Önce “BU BÖLÜMÜ İNCELE” ile bölümü aç; sonra rota görev sırasıyla çalışır.',1700);});
+ chapterDetail.innerHTML=`<small>${c.sourceLabel||''}</small><h3>${String(c.n).padStart(3,'0')} · ${c.title}</h3><p>${c.intro}</p><div class="routeRow">${route.map((l,i)=>`<button class="routeChip" data-loc="${l}">${i+1}. ${LOC_INFO[l]?.label||l}</button>`).join('')}</div><p><b>ROTA:</b> ${route.length} mekân · <b>ANA SAHNE:</b> ${chapterSceneRanges(c).length} · <b>MİKRO İZ:</b> ${chapterSequence(c).length} · <b>OYUN MEKANİĞİ:</b> ${(c.mech&&c.mech.title)||'Bölüm akışı'} · <b>SİSTEM:</b> ${chapterSystem(c).systemBrief} · <b>OYUN İMZASI:</b> ${chapterExperience(c).flow}</p><p style="color:#efc77f"><b>SERBEST BÖLÜM:</b> 1–144 arasındaki istediğin bölümü doğrudan oynayabilirsin. Bu seçim kayıtlı ana ilerlemeni silmez veya geri almaz.</p><div class="cActions"><button class="primary" id="startChapter">BU BÖLÜMÜ OYNA</button><button id="restartFromOne">↺ 1. BÖLÜMDEN OYNA</button><button id="prevChapter">← ÖNCEKİ</button><button id="nextChapterAtlas">SONRAKİ →</button>${inspectionMode?'<button id="returnProgress">KAYITLI OYUNA DÖN</button>':''}${activeAtlas?'<button id="exitAtlas">ANA EVRENE DÖN</button>':''}</div>`;
+ chapterDetail.querySelectorAll('.routeChip').forEach(b=>b.onclick=()=>{Game.toast('Önce “BU BÖLÜMÜ OYNA” ile bölümü aç; sonra rota görev sırasıyla çalışır.',1700);});
  document.getElementById('startChapter').onclick=()=>beginChapterInspection(chapterMenuSelection);
+ document.getElementById('restartFromOne').onclick=()=>beginChapterInspection(1);
  document.getElementById('prevChapter').onclick=()=>selectChapterForReview(chapterMenuSelection-1);
  document.getElementById('nextChapterAtlas').onclick=()=>selectChapterForReview(chapterMenuSelection+1);
  const rp=document.getElementById('returnProgress');if(rp)rp.onclick=returnFromInspection;
@@ -3911,19 +3916,19 @@ function visitAtlasLocation(loc,remember=true,browse=false){if(!LOC_INFO[loc])re
 function syncInspectionBar(){
  if(!inspectionBar)return;
  inspectionBar.classList.toggle('show',inspectionMode);inspectionBar.setAttribute('aria-hidden',inspectionMode?'false':'true');
- if(inspectionMode){inspectionLabel.textContent=`İNCELEME · BÖLÜM ${String(activeChapter).padStart(3,'0')}`;inspectionPrev.disabled=activeChapter<=1;inspectionNext.disabled=activeChapter>=144;atlasBadge.classList.remove('show');}
+ if(inspectionMode){inspectionLabel.textContent=`SERBEST OYUN · BÖLÜM ${String(activeChapter).padStart(3,'0')}`;inspectionPrev.disabled=activeChapter<=1;inspectionNext.disabled=activeChapter>=144;atlasBadge.classList.remove('show');}
 }
 function beginChapterInspection(n){
  n=Math.max(1,Math.min(144,Math.floor(Number(n)||1)));
  if(!inspectionMode){saveGame(true);inspectionMode=true;}
- closeChapters();startChapter(n,true);Game.toast(`İNCELEME MODU · BÖLÜM ${n} · ANA İLERLEME KORUNUYOR`,2100);
+ closeChapters();startChapter(n,true);Game.toast(`SERBEST OYUN · BÖLÜM ${n} · KAYITLI İLERLEME KORUNUYOR`,2100);
 }
 function returnFromInspection(){
  if(!inspectionMode)return;
  cancelChapterAction();if(isDialogueOpen)closeDlg();if(isChaptersOpen)closeChapters();
  inspectionMode=false;syncInspectionBar();activeAtlas=null;atlasObjs.length=0;atlasCollisions.length=0;clearChapterTargetVisual();clearChapterExperience();restoreWorldLights();
  const ok=loadGame();syncStoryUI();updateArcadeButton();if(ok)syncRestoredModeUI();renderChapterPanel();
- Game.toast(ok?`ANA İLERLEMEYE DÖNÜLDÜ · BÖLÜM ${activeChapter}`:'Ana kayıt bulunamadı.',1900);
+ Game.toast(ok?`KAYITLI OYUNA DÖNÜLDÜ · BÖLÜM ${activeChapter}`:'Ana kayıt bulunamadı.',1900);
 }
 function startChapter(n,asInspection=false){
  if(asInspection)inspectionMode=true;
@@ -3936,7 +3941,7 @@ function startChapter(n,asInspection=false){
    syncChapterTargetVisual();applyChapterExperience(c);if(!inspectionMode)saveGame(true);
    openChapterInterlude(chapterPrelude(c),()=>{
      const fs=seq[0],ap=actionProfile(fs);
-     objectiveEl.textContent=`${inspectionMode?'İNCELEME · ':''}BÖLÜM ${c.n} · ${(fs&&fs.goal)||'İLK HEDEFİ BUL'}`;
+     objectiveEl.textContent=`${inspectionMode?'SERBEST OYUN · ':''}BÖLÜM ${c.n} · ${(fs&&fs.goal)||'İLK HEDEFİ BUL'}`;
      Game.toast(`İLK SAHNE: ${sceneTitle(c,fs)} · ${ap.label}`,2100);
    });
  },420);
@@ -4898,7 +4903,7 @@ console.info('[TELKIN v6.22.1 STAGING] KONTROL DÜZELTMESİ · JOYSTICK SOL/SAĞ
 
 function refreshRuntimeLanguage(){
  try{
-  if(versionBadge)versionBadge.textContent='v6.22.4 · YATAY KONTROL DÜZELTMESİ';
+  if(versionBadge)versionBadge.textContent='v6.22.5 · SERBEST BÖLÜM SEÇİMİ';
   if(soundBtn)soundBtn.textContent=audioOn?TT('ui.soundOn','SES: AÇIK'):TT('ui.soundOff','SES: KAPALI');
   if(interact)interact.textContent=isDialogueOpen?TT('ui.continue','DEVAM'):TT('ui.interact','ETKİLEŞ');
   updateArcadeButton();
