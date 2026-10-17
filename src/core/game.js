@@ -43,7 +43,7 @@ function characterViewDirection(o,cam){
  const facing=Number.isFinite(o?.ry)?o.ry:0,camYaw=Math.atan2(cam[0]-o.x,cam[2]-o.z),rel=shortestAngle(facing,camYaw),a=Math.abs(rel);
  if(a<Math.PI*.25)return 'front';
  if(a>Math.PI*.75)return 'back';
- return rel>0?'right':'left';
+ return rel>0?'left':'right';
 }
 function characterAnimState(o){
  const moving=(o?.moveAmount||0)>.06;
@@ -90,7 +90,7 @@ const hudMenuBtn=document.getElementById('hudMenuBtn'),hudQuickMenu=document.get
 const versionBadge=document.getElementById('versionBadge');
 const cinematicUse=document.getElementById('cinematicUse'),cinUseKicker=document.getElementById('cinUseKicker'),cinUseTitle=document.getElementById('cinUseTitle'),cinUseMeta=document.getElementById('cinUseMeta'),vfLabel=document.getElementById('vfLabel'),cinPhoneState=document.getElementById('cinPhoneState'),cinPhoneName=document.getElementById('cinPhoneName'),cinDocKicker=document.getElementById('cinDocKicker'),cinDocTitle=document.getElementById('cinDocTitle'),cinDocGoal=document.getElementById('cinDocGoal');
 let cinematicUseLastKey='';
-const storyBtn=document.getElementById('storyBtn'),storyPanel=document.getElementById('storyPanel'),storyClose=document.getElementById('storyClose'),storyPanelTitle=document.getElementById('storyPanelTitle'),storyPanelBody=document.getElementById('storyPanelBody');if(versionBadge)versionBadge.textContent='v6.22.1 · KONTROL DÜZELTMESİ';
+const storyBtn=document.getElementById('storyBtn'),storyPanel=document.getElementById('storyPanel'),storyClose=document.getElementById('storyClose'),storyPanelTitle=document.getElementById('storyPanelTitle'),storyPanelBody=document.getElementById('storyPanelBody');if(versionBadge)versionBadge.textContent='v6.22.2 · YÖN GÖRSELİ DÜZELTMESİ';
 const chaptersBtn=document.getElementById('chaptersBtn'),chaptersPanel=document.getElementById('chaptersPanel'),chaptersClose=document.getElementById('chaptersClose');
 const volTabs=document.getElementById('volTabs'),chapterGrid=document.getElementById('chapterGrid'),chapterDetail=document.getElementById('chapterDetail');
 const chapterJumpInput=document.getElementById('chapterJumpInput'),chapterJumpGo=document.getElementById('chapterJumpGo'),inspectionBar=document.getElementById('inspectionBar'),inspectionLabel=document.getElementById('inspectionLabel'),inspectionPrev=document.getElementById('inspectionPrev'),inspectionNext=document.getElementById('inspectionNext'),inspectionReturn=document.getElementById('inspectionReturn');
@@ -4448,7 +4448,7 @@ function mahirViewDirection(cam){
  const a=Math.abs(rel);
  if(a<Math.PI*.25)return 'front';
  if(a>Math.PI*.75)return 'back';
- return rel>0?'right':'left';
+ return rel>0?'left':'right';
 }
 function mahirAnimState(){
  if(mahirMoveAmount<.075)return 'idle';
@@ -4479,7 +4479,7 @@ const MAHIR_ECHO_CHARACTERS=new Set(['DİĞER MAHİR','KAYITTAKİ MAHİR']);
 function isMahirEchoCharacter(name){return MAHIR_ECHO_CHARACTERS.has(canonicalCharacterName(name));}
 function mahirEchoViewDirection(o,cam){
  const facing=Number.isFinite(o.ry)?o.ry:0,camYaw=Math.atan2(cam[0]-o.x,cam[2]-o.z),rel=shortestAngle(facing,camYaw),a=Math.abs(rel);
- if(a<Math.PI*.25)return 'front';if(a>Math.PI*.75)return 'back';return rel>0?'right':'left';
+ if(a<Math.PI*.25)return 'front';if(a>Math.PI*.75)return 'back';return rel>0?'left':'right';
 }
 function drawMahirEchoSprite(o,vp,cam,planes){
  if(!o||!isMahirEchoCharacter(o.character)||!inFrustum(o,planes))return;
@@ -4898,7 +4898,7 @@ console.info('[TELKIN v6.22.1 STAGING] KONTROL DÜZELTMESİ · JOYSTICK SOL/SAĞ
 
 function refreshRuntimeLanguage(){
  try{
-  if(versionBadge)versionBadge.textContent='v6.22.1 · KONTROL DÜZELTMESİ';
+  if(versionBadge)versionBadge.textContent='v6.22.2 · YÖN GÖRSELİ DÜZELTMESİ';
   if(soundBtn)soundBtn.textContent=audioOn?TT('ui.soundOn','SES: AÇIK'):TT('ui.soundOff','SES: KAPALI');
   if(interact)interact.textContent=isDialogueOpen?TT('ui.continue','DEVAM'):TT('ui.interact','ETKİLEŞ');
   updateArcadeButton();

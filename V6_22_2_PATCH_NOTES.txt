@@ -1,0 +1,17 @@
+TELKİN v6.22.2 — YÖN GÖRSELİ DÜZELTMESİ
+
+Sorunun kökü:
+- Joystick hareket ekseni doğruydu: sağ sürükleme +jx ile sağa hareket ediyordu.
+- Karakter paketlerindeki left/right görselleri ekran yönüne göre ters adlandırılmıştı.
+- Bu nedenle Mahir sağa giderken sola bakıyormuş gibi görünüyordu.
+
+Düzeltme:
+- Hareket hesabına dokunulmadı.
+- Mahir ve diğer karakterlerin sol/sağ sprite seçimi ters çevrildi.
+- Service Worker cache v6.22.2'ye yükseltildi.
+
+Kurulum:
+1) ZIP'i aç.
+2) index.html, sw.js ve src klasörünü telkin-6.23 yerel repo klasörüne kopyala.
+3) Değiştir/Replace onayı ver.
+4) GitHub Desktop: Commit to main -> Push origin.
