@@ -1,0 +1,1185 @@
+{
+  "schema": 1,
+  "work": "TELKİN",
+  "totalChapters": 144,
+  "availableChapters": 144,
+  "volumes": [
+    {
+      "volume": 1,
+      "title": "TELKİN I",
+      "startChapter": 1,
+      "endChapter": 36,
+      "sourceFile": "TELKIN_COMPLETE_PRINT_MASTER_v41.docx",
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "ELİNİ KALDIRAMAZSIN",
+          "path": "vol-1/chapter-001.json",
+          "paragraphCount": 20,
+          "wordCount": 1173
+        },
+        {
+          "chapter": 2,
+          "title": "KİLİT",
+          "path": "vol-1/chapter-002.json",
+          "paragraphCount": 26,
+          "wordCount": 1356
+        },
+        {
+          "chapter": 3,
+          "title": "KAMERA",
+          "path": "vol-1/chapter-003.json",
+          "paragraphCount": 97,
+          "wordCount": 1776
+        },
+        {
+          "chapter": 4,
+          "title": "YANLIŞ HATIRA",
+          "path": "vol-1/chapter-004.json",
+          "paragraphCount": 154,
+          "wordCount": 1993
+        },
+        {
+          "chapter": 5,
+          "title": "NİSAN",
+          "path": "vol-1/chapter-005.json",
+          "paragraphCount": 290,
+          "wordCount": 2784
+        },
+        {
+          "chapter": 6,
+          "title": "SESSİZ BÖLGE",
+          "path": "vol-1/chapter-006.json",
+          "paragraphCount": 264,
+          "wordCount": 2408
+        },
+        {
+          "chapter": 7,
+          "title": "GÖRÜNTÜNÜN ARKASI",
+          "path": "vol-1/chapter-007.json",
+          "paragraphCount": 221,
+          "wordCount": 1958
+        },
+        {
+          "chapter": 8,
+          "title": "KAZADAN ÖNCE",
+          "path": "vol-1/chapter-008.json",
+          "paragraphCount": 232,
+          "wordCount": 1952
+        },
+        {
+          "chapter": 9,
+          "title": "BİR DAHA YAPMA",
+          "path": "vol-1/chapter-009.json",
+          "paragraphCount": 205,
+          "wordCount": 1880
+        },
+        {
+          "chapter": 10,
+          "title": "SEN BENİ GÖRMEMELİYDİN",
+          "path": "vol-1/chapter-010.json",
+          "paragraphCount": 12,
+          "wordCount": 1603
+        },
+        {
+          "chapter": 11,
+          "title": "YEDİ",
+          "path": "vol-1/chapter-011.json",
+          "paragraphCount": 255,
+          "wordCount": 1605
+        },
+        {
+          "chapter": 12,
+          "title": "HAGU",
+          "path": "vol-1/chapter-012.json",
+          "paragraphCount": 159,
+          "wordCount": 1686
+        },
+        {
+          "chapter": 13,
+          "title": "DERİN SU",
+          "path": "vol-1/chapter-013.json",
+          "paragraphCount": 19,
+          "wordCount": 1773
+        },
+        {
+          "chapter": 14,
+          "title": "GÖZ",
+          "path": "vol-1/chapter-014.json",
+          "paragraphCount": 172,
+          "wordCount": 1539
+        },
+        {
+          "chapter": 15,
+          "title": "BABAM ÖLDÜĞÜNDE",
+          "path": "vol-1/chapter-015.json",
+          "paragraphCount": 217,
+          "wordCount": 1602
+        },
+        {
+          "chapter": 16,
+          "title": "SUNA",
+          "path": "vol-1/chapter-016.json",
+          "paragraphCount": 298,
+          "wordCount": 1734
+        },
+        {
+          "chapter": 17,
+          "title": "ÜÇ YÜZ ON YEDİ",
+          "path": "vol-1/chapter-017.json",
+          "paragraphCount": 281,
+          "wordCount": 1549
+        },
+        {
+          "chapter": 18,
+          "title": "BARAN",
+          "path": "vol-1/chapter-018.json",
+          "paragraphCount": 178,
+          "wordCount": 1541
+        },
+        {
+          "chapter": 19,
+          "title": "UYANANLAR",
+          "path": "vol-1/chapter-019.json",
+          "paragraphCount": 241,
+          "wordCount": 1887
+        },
+        {
+          "chapter": 20,
+          "title": "PROMETHEUS'UN HATASI",
+          "path": "vol-1/chapter-020.json",
+          "paragraphCount": 271,
+          "wordCount": 1766
+        },
+        {
+          "chapter": 21,
+          "title": "ÖLÜM YOKSA",
+          "path": "vol-1/chapter-021.json",
+          "paragraphCount": 283,
+          "wordCount": 1685
+        },
+        {
+          "chapter": 22,
+          "title": "BABAM EVE GELDİ",
+          "path": "vol-1/chapter-022.json",
+          "paragraphCount": 272,
+          "wordCount": 1618
+        },
+        {
+          "chapter": 23,
+          "title": "MİNA DİYE BİRİ YOK",
+          "path": "vol-1/chapter-023.json",
+          "paragraphCount": 262,
+          "wordCount": 1409
+        },
+        {
+          "chapter": 24,
+          "title": "BİR ÖLÜMÜ SEÇMEK",
+          "path": "vol-1/chapter-024.json",
+          "paragraphCount": 305,
+          "wordCount": 1506
+        },
+        {
+          "chapter": 25,
+          "title": "LEVH",
+          "path": "vol-1/chapter-025.json",
+          "paragraphCount": 265,
+          "wordCount": 1660
+        },
+        {
+          "chapter": 26,
+          "title": "BARAN’IN CENNETİ",
+          "path": "vol-1/chapter-026.json",
+          "paragraphCount": 279,
+          "wordCount": 1838
+        },
+        {
+          "chapter": 27,
+          "title": "BİN KİŞİ",
+          "path": "vol-1/chapter-027.json",
+          "paragraphCount": 355,
+          "wordCount": 1779
+        },
+        {
+          "chapter": 28,
+          "title": "HATIRLAYAN ŞEHİR",
+          "path": "vol-1/chapter-028.json",
+          "paragraphCount": 183,
+          "wordCount": 1297
+        },
+        {
+          "chapter": 29,
+          "title": "BERZAH SIZIYOR",
+          "path": "vol-1/chapter-029.json",
+          "paragraphCount": 297,
+          "wordCount": 1505
+        },
+        {
+          "chapter": 30,
+          "title": "CENNET PROBLEMİ",
+          "path": "vol-1/chapter-030.json",
+          "paragraphCount": 373,
+          "wordCount": 1962
+        },
+        {
+          "chapter": 31,
+          "title": "BABAM",
+          "path": "vol-1/chapter-031.json",
+          "paragraphCount": 467,
+          "wordCount": 2307
+        },
+        {
+          "chapter": 32,
+          "title": "MELEKLER BÖLÜNÜYOR",
+          "path": "vol-1/chapter-032.json",
+          "paragraphCount": 524,
+          "wordCount": 2677
+        },
+        {
+          "chapter": 33,
+          "title": "EMR",
+          "path": "vol-1/chapter-033.json",
+          "paragraphCount": 389,
+          "wordCount": 2669
+        },
+        {
+          "chapter": 34,
+          "title": "SON TELKİN",
+          "path": "vol-1/chapter-034.json",
+          "paragraphCount": 347,
+          "wordCount": 2439
+        },
+        {
+          "chapter": 35,
+          "title": "ÜÇÜNCÜ SEÇENEK",
+          "path": "vol-1/chapter-035.json",
+          "paragraphCount": 210,
+          "wordCount": 1842
+        },
+        {
+          "chapter": 36,
+          "title": "UYANANLAR",
+          "path": "vol-1/chapter-036.json",
+          "paragraphCount": 124,
+          "wordCount": 1401
+        }
+      ]
+    },
+    {
+      "volume": 2,
+      "title": "TELKİN II",
+      "startChapter": 37,
+      "endChapter": 72,
+      "sourceFile": "TELKIN-II-Google-Play-FINAL.epub",
+      "sourceType": "Library final EPUB · Google Play final",
+      "chapters": [
+        {
+          "chapter": 37,
+          "localChapter": 1,
+          "title": "KAPIYI KAPATMAK",
+          "path": "vol-2/chapter-037.json",
+          "paragraphCount": 201,
+          "wordCount": 2184
+        },
+        {
+          "chapter": 38,
+          "localChapter": 2,
+          "title": "UYKU",
+          "path": "vol-2/chapter-038.json",
+          "paragraphCount": 78,
+          "wordCount": 964
+        },
+        {
+          "chapter": 39,
+          "localChapter": 3,
+          "title": "İKİ HATIRA",
+          "path": "vol-2/chapter-039.json",
+          "paragraphCount": 201,
+          "wordCount": 1387
+        },
+        {
+          "chapter": 40,
+          "localChapter": 4,
+          "title": "PERDE",
+          "path": "vol-2/chapter-040.json",
+          "paragraphCount": 197,
+          "wordCount": 1733
+        },
+        {
+          "chapter": 41,
+          "localChapter": 5,
+          "title": "GERÇEK HAYAT",
+          "path": "vol-2/chapter-041.json",
+          "paragraphCount": 230,
+          "wordCount": 1807
+        },
+        {
+          "chapter": 42,
+          "localChapter": 6,
+          "title": "MAĞARA",
+          "path": "vol-2/chapter-042.json",
+          "paragraphCount": 190,
+          "wordCount": 1907
+        },
+        {
+          "chapter": 43,
+          "localChapter": 7,
+          "title": "AYNI ŞEYİ Mİ GÖRDÜLER?",
+          "path": "vol-2/chapter-043.json",
+          "paragraphCount": 194,
+          "wordCount": 1697
+        },
+        {
+          "chapter": 44,
+          "localChapter": 8,
+          "title": "YANLIŞ SOKAK",
+          "path": "vol-2/chapter-044.json",
+          "paragraphCount": 220,
+          "wordCount": 1839
+        },
+        {
+          "chapter": 45,
+          "localChapter": 9,
+          "title": "İLK HİPOTEZ",
+          "path": "vol-2/chapter-045.json",
+          "paragraphCount": 158,
+          "wordCount": 1420
+        },
+        {
+          "chapter": 46,
+          "localChapter": 10,
+          "title": "PEYGAMBERLERİN DİLİ",
+          "path": "vol-2/chapter-046.json",
+          "paragraphCount": 231,
+          "wordCount": 1708
+        },
+        {
+          "chapter": 47,
+          "localChapter": 11,
+          "title": "DÖNÜŞ",
+          "path": "vol-2/chapter-047.json",
+          "paragraphCount": 258,
+          "wordCount": 1804
+        },
+        {
+          "chapter": 48,
+          "localChapter": 12,
+          "title": "KAYIT",
+          "path": "vol-2/chapter-048.json",
+          "paragraphCount": 257,
+          "wordCount": 1889
+        },
+        {
+          "chapter": 49,
+          "localChapter": 13,
+          "title": "RÜYALAR",
+          "path": "vol-2/chapter-049.json",
+          "paragraphCount": 253,
+          "wordCount": 1522
+        },
+        {
+          "chapter": 50,
+          "localChapter": 14,
+          "title": "BAŞKA HAYATLAR",
+          "path": "vol-2/chapter-050.json",
+          "paragraphCount": 134,
+          "wordCount": 832
+        },
+        {
+          "chapter": 51,
+          "localChapter": 15,
+          "title": "BİZ BURADA MIYIZ?",
+          "path": "vol-2/chapter-051.json",
+          "paragraphCount": 254,
+          "wordCount": 1420
+        },
+        {
+          "chapter": 52,
+          "localChapter": 16,
+          "title": "ÇATLAKLAR",
+          "path": "vol-2/chapter-052.json",
+          "paragraphCount": 237,
+          "wordCount": 1284
+        },
+        {
+          "chapter": 53,
+          "localChapter": 17,
+          "title": "SEÇİCİ OKUMA",
+          "path": "vol-2/chapter-053.json",
+          "paragraphCount": 211,
+          "wordCount": 1541
+        },
+        {
+          "chapter": 54,
+          "localChapter": 18,
+          "title": "ASIL DÜNYA",
+          "path": "vol-2/chapter-054.json",
+          "paragraphCount": 307,
+          "wordCount": 2365
+        },
+        {
+          "chapter": 55,
+          "localChapter": 19,
+          "title": "BURASI ÖNEMLİ Mİ?",
+          "path": "vol-2/chapter-055.json",
+          "paragraphCount": 200,
+          "wordCount": 1602
+        },
+        {
+          "chapter": 56,
+          "localChapter": 20,
+          "title": "BABAM NEREDE?",
+          "path": "vol-2/chapter-056.json",
+          "paragraphCount": 229,
+          "wordCount": 1230
+        },
+        {
+          "chapter": 57,
+          "localChapter": 21,
+          "title": "BERZAH",
+          "path": "vol-2/chapter-057.json",
+          "paragraphCount": 351,
+          "wordCount": 2057
+        },
+        {
+          "chapter": 58,
+          "localChapter": 22,
+          "title": "YANLIŞ UYANIŞ",
+          "path": "vol-2/chapter-058.json",
+          "paragraphCount": 242,
+          "wordCount": 2085
+        },
+        {
+          "chapter": 59,
+          "localChapter": 23,
+          "title": "EĞER UYKUYSA",
+          "path": "vol-2/chapter-059.json",
+          "paragraphCount": 256,
+          "wordCount": 1528
+        },
+        {
+          "chapter": 60,
+          "localChapter": 24,
+          "title": "SEN NE DÜŞÜNÜYORSUN?",
+          "path": "vol-2/chapter-060.json",
+          "paragraphCount": 327,
+          "wordCount": 2008
+        },
+        {
+          "chapter": 61,
+          "localChapter": 25,
+          "title": "KAPI",
+          "path": "vol-2/chapter-061.json",
+          "paragraphCount": 310,
+          "wordCount": 1895
+        },
+        {
+          "chapter": 62,
+          "localChapter": 26,
+          "title": "BİLMİYORUM",
+          "path": "vol-2/chapter-062.json",
+          "paragraphCount": 236,
+          "wordCount": 1627
+        },
+        {
+          "chapter": 63,
+          "localChapter": 27,
+          "title": "EŞİK",
+          "path": "vol-2/chapter-063.json",
+          "paragraphCount": 471,
+          "wordCount": 2582
+        },
+        {
+          "chapter": 64,
+          "localChapter": 28,
+          "title": "SORUN",
+          "path": "vol-2/chapter-064.json",
+          "paragraphCount": 61,
+          "wordCount": 517
+        },
+        {
+          "chapter": 65,
+          "localChapter": 29,
+          "title": "BEN Mİ?",
+          "path": "vol-2/chapter-065.json",
+          "paragraphCount": 294,
+          "wordCount": 1567
+        },
+        {
+          "chapter": 66,
+          "localChapter": 30,
+          "title": "TERMOMETRE",
+          "path": "vol-2/chapter-066.json",
+          "paragraphCount": 278,
+          "wordCount": 1794
+        },
+        {
+          "chapter": 67,
+          "localChapter": 31,
+          "title": "KAYITÇI",
+          "path": "vol-2/chapter-067.json",
+          "paragraphCount": 116,
+          "wordCount": 514
+        },
+        {
+          "chapter": 68,
+          "localChapter": 32,
+          "title": "YANLIŞ SORU",
+          "path": "vol-2/chapter-068.json",
+          "paragraphCount": 275,
+          "wordCount": 1711
+        },
+        {
+          "chapter": 69,
+          "localChapter": 33,
+          "title": "EMANET",
+          "path": "vol-2/chapter-069.json",
+          "paragraphCount": 209,
+          "wordCount": 1420
+        },
+        {
+          "chapter": 70,
+          "localChapter": 34,
+          "title": "MİNA",
+          "path": "vol-2/chapter-070.json",
+          "paragraphCount": 214,
+          "wordCount": 1265
+        },
+        {
+          "chapter": 71,
+          "localChapter": 35,
+          "title": "KAPIYI AÇMAK",
+          "path": "vol-2/chapter-071.json",
+          "paragraphCount": 117,
+          "wordCount": 1138
+        },
+        {
+          "chapter": 72,
+          "localChapter": 36,
+          "title": "KAYIT DIŞI",
+          "path": "vol-2/chapter-072.json",
+          "paragraphCount": 886,
+          "wordCount": 4009
+        }
+      ]
+    },
+    {
+      "volume": 3,
+      "title": "TELKİN III",
+      "startChapter": 73,
+      "endChapter": 108,
+      "sourceFile": "TELKIN_III_FINAL.epub",
+      "sourceType": "Google Drive final EPUB",
+      "chapters": [
+        {
+          "chapter": 73,
+          "localChapter": 1,
+          "title": "ÇİZİK",
+          "path": "vol-3/chapter-073.json",
+          "paragraphCount": 378,
+          "wordCount": 3523
+        },
+        {
+          "chapter": 74,
+          "localChapter": 2,
+          "title": "BABAM BENDEN GENÇTİ",
+          "path": "vol-3/chapter-074.json",
+          "paragraphCount": 279,
+          "wordCount": 2716
+        },
+        {
+          "chapter": 75,
+          "localChapter": 3,
+          "title": "HATIRLADIĞIM GİBİ DEĞİL",
+          "path": "vol-3/chapter-075.json",
+          "paragraphCount": 249,
+          "wordCount": 2618
+        },
+        {
+          "chapter": 76,
+          "localChapter": 4,
+          "title": "KAN VE AHŞAP",
+          "path": "vol-3/chapter-076.json",
+          "paragraphCount": 329,
+          "wordCount": 2963
+        },
+        {
+          "chapter": 77,
+          "localChapter": 5,
+          "title": "YABANCI ADAM",
+          "path": "vol-3/chapter-077.json",
+          "paragraphCount": 59,
+          "wordCount": 2849
+        },
+        {
+          "chapter": 78,
+          "localChapter": 6,
+          "title": "ARPA",
+          "path": "vol-3/chapter-078.json",
+          "paragraphCount": 119,
+          "wordCount": 3118
+        },
+        {
+          "chapter": 79,
+          "localChapter": 7,
+          "title": "MÜHÜR",
+          "path": "vol-3/chapter-079.json",
+          "paragraphCount": 193,
+          "wordCount": 3020
+        },
+        {
+          "chapter": 80,
+          "localChapter": 8,
+          "title": "ÖLÜ YAZICI",
+          "path": "vol-3/chapter-080.json",
+          "paragraphCount": 220,
+          "wordCount": 2866
+        },
+        {
+          "chapter": 81,
+          "localChapter": 9,
+          "title": "BENDEN ÖNCE GELEN",
+          "path": "vol-3/chapter-081.json",
+          "paragraphCount": 317,
+          "wordCount": 3245
+        },
+        {
+          "chapter": 82,
+          "localChapter": 10,
+          "title": "BİR İSMİN FİYATI",
+          "path": "vol-3/chapter-082.json",
+          "paragraphCount": 175,
+          "wordCount": 2764
+        },
+        {
+          "chapter": 83,
+          "localChapter": 11,
+          "title": "GECE HIRSIZLARI",
+          "path": "vol-3/chapter-083.json",
+          "paragraphCount": 107,
+          "wordCount": 2455
+        },
+        {
+          "chapter": 84,
+          "localChapter": 12,
+          "title": "GÜNEŞ DOĞMADAN",
+          "path": "vol-3/chapter-084.json",
+          "paragraphCount": 190,
+          "wordCount": 2472
+        },
+        {
+          "chapter": 85,
+          "localChapter": 13,
+          "title": "DÖNENLER",
+          "path": "vol-3/chapter-085.json",
+          "paragraphCount": 256,
+          "wordCount": 2843
+        },
+        {
+          "chapter": 86,
+          "localChapter": 14,
+          "title": "KAPIYI AÇAN ADAM",
+          "path": "vol-3/chapter-086.json",
+          "paragraphCount": 103,
+          "wordCount": 2803
+        },
+        {
+          "chapter": 87,
+          "localChapter": 15,
+          "title": "GÖĞE BAKANLAR",
+          "path": "vol-3/chapter-087.json",
+          "paragraphCount": 143,
+          "wordCount": 2902
+        },
+        {
+          "chapter": 88,
+          "localChapter": 16,
+          "title": "SÖZ VERDİĞİM YER",
+          "path": "vol-3/chapter-088.json",
+          "paragraphCount": 352,
+          "wordCount": 2980
+        },
+        {
+          "chapter": 89,
+          "localChapter": 17,
+          "title": "ON YEDİ GÜN",
+          "path": "vol-3/chapter-089.json",
+          "paragraphCount": 344,
+          "wordCount": 3105
+        },
+        {
+          "chapter": 90,
+          "localChapter": 18,
+          "title": "HENÜZ",
+          "path": "vol-3/chapter-090.json",
+          "paragraphCount": 473,
+          "wordCount": 3134
+        },
+        {
+          "chapter": 91,
+          "localChapter": 19,
+          "title": "DOKUNMA",
+          "path": "vol-3/chapter-091.json",
+          "paragraphCount": 543,
+          "wordCount": 3082
+        },
+        {
+          "chapter": 92,
+          "localChapter": 20,
+          "title": "KIRIK KÜP",
+          "path": "vol-3/chapter-092.json",
+          "paragraphCount": 472,
+          "wordCount": 3118
+        },
+        {
+          "chapter": 93,
+          "localChapter": 21,
+          "title": "MAĞARADAKİ GECE",
+          "path": "vol-3/chapter-093.json",
+          "paragraphCount": 185,
+          "wordCount": 3149
+        },
+        {
+          "chapter": 94,
+          "localChapter": 22,
+          "title": "YOLCU",
+          "path": "vol-3/chapter-094.json",
+          "paragraphCount": 184,
+          "wordCount": 3195
+        },
+        {
+          "chapter": 95,
+          "localChapter": 23,
+          "title": "SU TAŞIYAN ÇOCUK",
+          "path": "vol-3/chapter-095.json",
+          "paragraphCount": 174,
+          "wordCount": 3285
+        },
+        {
+          "chapter": 96,
+          "localChapter": 24,
+          "title": "GÖREMEDİĞİ YER",
+          "path": "vol-3/chapter-096.json",
+          "paragraphCount": 229,
+          "wordCount": 3124
+        },
+        {
+          "chapter": 97,
+          "localChapter": 25,
+          "title": "ÇORBA",
+          "path": "vol-3/chapter-097.json",
+          "paragraphCount": 288,
+          "wordCount": 2602
+        },
+        {
+          "chapter": 98,
+          "localChapter": 26,
+          "title": "ŞEHİR DÜŞERKEN",
+          "path": "vol-3/chapter-098.json",
+          "paragraphCount": 254,
+          "wordCount": 2955
+        },
+        {
+          "chapter": 99,
+          "localChapter": 27,
+          "title": "İKİ YABANCI",
+          "path": "vol-3/chapter-099.json",
+          "paragraphCount": 310,
+          "wordCount": 2837
+        },
+        {
+          "chapter": 100,
+          "localChapter": 28,
+          "title": "YANGIN",
+          "path": "vol-3/chapter-100.json",
+          "paragraphCount": 262,
+          "wordCount": 3189
+        },
+        {
+          "chapter": 101,
+          "localChapter": 29,
+          "title": "AREL",
+          "path": "vol-3/chapter-101.json",
+          "paragraphCount": 242,
+          "wordCount": 2995
+        },
+        {
+          "chapter": 102,
+          "localChapter": 30,
+          "title": "SÖZ",
+          "path": "vol-3/chapter-102.json",
+          "paragraphCount": 303,
+          "wordCount": 3000
+        },
+        {
+          "chapter": 103,
+          "localChapter": 31,
+          "title": "O GÜN",
+          "path": "vol-3/chapter-103.json",
+          "paragraphCount": 84,
+          "wordCount": 2781
+        },
+        {
+          "chapter": 104,
+          "localChapter": 32,
+          "title": "İKİ MAHİR",
+          "path": "vol-3/chapter-104.json",
+          "paragraphCount": 157,
+          "wordCount": 3138
+        },
+        {
+          "chapter": 105,
+          "localChapter": 33,
+          "title": "YOL",
+          "path": "vol-3/chapter-105.json",
+          "paragraphCount": 116,
+          "wordCount": 3180
+        },
+        {
+          "chapter": 106,
+          "localChapter": 34,
+          "title": "BİZDEN ÖNCE",
+          "path": "vol-3/chapter-106.json",
+          "paragraphCount": 117,
+          "wordCount": 3187
+        },
+        {
+          "chapter": 107,
+          "localChapter": 35,
+          "title": "İNSANSIZ BİR SABAH",
+          "path": "vol-3/chapter-107.json",
+          "paragraphCount": 155,
+          "wordCount": 2960
+        },
+        {
+          "chapter": 108,
+          "localChapter": 36,
+          "title": "ÖNCEDEN",
+          "path": "vol-3/chapter-108.json",
+          "paragraphCount": 157,
+          "wordCount": 2282
+        }
+      ]
+    },
+    {
+      "volume": 4,
+      "title": "TELKİN IV",
+      "startChapter": 109,
+      "endChapter": 144,
+      "sourceFile": "TELKIN_IV_FINAL.epub",
+      "sourceType": "Google Drive final EPUB",
+      "chapters": [
+        {
+          "chapter": 109,
+          "localChapter": 1,
+          "title": "BUNU BEN KAYDETMEDİM",
+          "path": "vol-4/chapter-109.json",
+          "paragraphCount": 463,
+          "wordCount": 3369
+        },
+        {
+          "chapter": 110,
+          "localChapter": 2,
+          "title": "DÖRT DAKİKA",
+          "path": "vol-4/chapter-110.json",
+          "paragraphCount": 447,
+          "wordCount": 3132
+        },
+        {
+          "chapter": 111,
+          "localChapter": 3,
+          "title": "ARADA NE OLDU?",
+          "path": "vol-4/chapter-111.json",
+          "paragraphCount": 397,
+          "wordCount": 3280
+        },
+        {
+          "chapter": 112,
+          "localChapter": 4,
+          "title": "İKİ MAHİR",
+          "path": "vol-4/chapter-112.json",
+          "paragraphCount": 440,
+          "wordCount": 3081
+        },
+        {
+          "chapter": 113,
+          "localChapter": 5,
+          "title": "KAYDA SIĞMAYAN",
+          "path": "vol-4/chapter-113.json",
+          "paragraphCount": 408,
+          "wordCount": 2956
+        },
+        {
+          "chapter": 114,
+          "localChapter": 6,
+          "title": "KÖR TEST",
+          "path": "vol-4/chapter-114.json",
+          "paragraphCount": 315,
+          "wordCount": 3043
+        },
+        {
+          "chapter": 115,
+          "localChapter": 7,
+          "title": "FAZLADAN SATIR",
+          "path": "vol-4/chapter-115.json",
+          "paragraphCount": 247,
+          "wordCount": 1995
+        },
+        {
+          "chapter": 116,
+          "localChapter": 8,
+          "title": "HENÜZ SÖYLEMEDİM",
+          "path": "vol-4/chapter-116.json",
+          "paragraphCount": 281,
+          "wordCount": 1776
+        },
+        {
+          "chapter": 117,
+          "localChapter": 9,
+          "title": "SATIRIN SONU",
+          "path": "vol-4/chapter-117.json",
+          "paragraphCount": 309,
+          "wordCount": 2086
+        },
+        {
+          "chapter": 118,
+          "localChapter": 10,
+          "title": "GERİ DÖNMEK",
+          "path": "vol-4/chapter-118.json",
+          "paragraphCount": 384,
+          "wordCount": 1954
+        },
+        {
+          "chapter": 119,
+          "localChapter": 11,
+          "title": "AYNI SAHNE",
+          "path": "vol-4/chapter-119.json",
+          "paragraphCount": 332,
+          "wordCount": 1580
+        },
+        {
+          "chapter": 120,
+          "localChapter": 12,
+          "title": "İSMİM YOK",
+          "path": "vol-4/chapter-120.json",
+          "paragraphCount": 442,
+          "wordCount": 2507
+        },
+        {
+          "chapter": 121,
+          "localChapter": 13,
+          "title": "SAĞA DÖN",
+          "path": "vol-4/chapter-121.json",
+          "paragraphCount": 454,
+          "wordCount": 2531
+        },
+        {
+          "chapter": 122,
+          "localChapter": 14,
+          "title": "BEN Mİ SEÇTİM?",
+          "path": "vol-4/chapter-122.json",
+          "paragraphCount": 496,
+          "wordCount": 2558
+        },
+        {
+          "chapter": 123,
+          "localChapter": 15,
+          "title": "OKUNMAYAN YOL",
+          "path": "vol-4/chapter-123.json",
+          "paragraphCount": 431,
+          "wordCount": 2212
+        },
+        {
+          "chapter": 124,
+          "localChapter": 16,
+          "title": "KAPANINCA",
+          "path": "vol-4/chapter-124.json",
+          "paragraphCount": 531,
+          "wordCount": 2557
+        },
+        {
+          "chapter": 125,
+          "localChapter": 17,
+          "title": "ÖTEKİ MAHİR",
+          "path": "vol-4/chapter-125.json",
+          "paragraphCount": 472,
+          "wordCount": 2646
+        },
+        {
+          "chapter": 126,
+          "localChapter": 18,
+          "title": "BİRİ BAKIYOR",
+          "path": "vol-4/chapter-126.json",
+          "paragraphCount": 533,
+          "wordCount": 2588
+        },
+        {
+          "chapter": 127,
+          "localChapter": 19,
+          "title": "SEÇİLEN ANLAR",
+          "path": "vol-4/chapter-127.json",
+          "paragraphCount": 607,
+          "wordCount": 2529
+        },
+        {
+          "chapter": 128,
+          "localChapter": 20,
+          "title": "İLK İZ",
+          "path": "vol-4/chapter-128.json",
+          "paragraphCount": 488,
+          "wordCount": 2419
+        },
+        {
+          "chapter": 129,
+          "localChapter": 21,
+          "title": "KİM SÖYLEDİ?",
+          "path": "vol-4/chapter-129.json",
+          "paragraphCount": 301,
+          "wordCount": 2180
+        },
+        {
+          "chapter": 130,
+          "localChapter": 22,
+          "title": "GİTMEDİM",
+          "path": "vol-4/chapter-130.json",
+          "paragraphCount": 500,
+          "wordCount": 3120
+        },
+        {
+          "chapter": 131,
+          "localChapter": 23,
+          "title": "AYNI ANDA",
+          "path": "vol-4/chapter-131.json",
+          "paragraphCount": 350,
+          "wordCount": 2671
+        },
+        {
+          "chapter": 132,
+          "localChapter": 24,
+          "title": "ELLERİMLE",
+          "path": "vol-4/chapter-132.json",
+          "paragraphCount": 447,
+          "wordCount": 2994
+        },
+        {
+          "chapter": 133,
+          "localChapter": 25,
+          "title": "KAYDEDİLEN",
+          "path": "vol-4/chapter-133.json",
+          "paragraphCount": 495,
+          "wordCount": 2787
+        },
+        {
+          "chapter": 134,
+          "localChapter": 26,
+          "title": "EŞİKLER",
+          "path": "vol-4/chapter-134.json",
+          "paragraphCount": 235,
+          "wordCount": 2010
+        },
+        {
+          "chapter": 135,
+          "localChapter": 27,
+          "title": "ÖZNE",
+          "path": "vol-4/chapter-135.json",
+          "paragraphCount": 346,
+          "wordCount": 2551
+        },
+        {
+          "chapter": 136,
+          "localChapter": 28,
+          "title": "BEŞİNCİ AÇI",
+          "path": "vol-4/chapter-136.json",
+          "paragraphCount": 199,
+          "wordCount": 2775
+        },
+        {
+          "chapter": 137,
+          "localChapter": 29,
+          "title": "YERİ YOK",
+          "path": "vol-4/chapter-137.json",
+          "paragraphCount": 310,
+          "wordCount": 2590
+        },
+        {
+          "chapter": 138,
+          "localChapter": 30,
+          "title": "HİÇ OLMADI",
+          "path": "vol-4/chapter-138.json",
+          "paragraphCount": 75,
+          "wordCount": 2249
+        },
+        {
+          "chapter": 139,
+          "localChapter": 31,
+          "title": "CÜMLE",
+          "path": "vol-4/chapter-139.json",
+          "paragraphCount": 171,
+          "wordCount": 2104
+        },
+        {
+          "chapter": 140,
+          "localChapter": 32,
+          "title": "SÖYLEMEDEN",
+          "path": "vol-4/chapter-140.json",
+          "paragraphCount": 198,
+          "wordCount": 1923
+        },
+        {
+          "chapter": 141,
+          "localChapter": 33,
+          "title": "KARŞILIK",
+          "path": "vol-4/chapter-141.json",
+          "paragraphCount": 239,
+          "wordCount": 2042
+        },
+        {
+          "chapter": 142,
+          "localChapter": 34,
+          "title": "PARAGRAF",
+          "path": "vol-4/chapter-142.json",
+          "paragraphCount": 192,
+          "wordCount": 1583
+        },
+        {
+          "chapter": 143,
+          "localChapter": 35,
+          "title": "DEĞİŞMEYEN",
+          "path": "vol-4/chapter-143.json",
+          "paragraphCount": 90,
+          "wordCount": 1705
+        },
+        {
+          "chapter": 144,
+          "localChapter": 36,
+          "title": "OKUYAN",
+          "path": "vol-4/chapter-144.json",
+          "paragraphCount": 104,
+          "wordCount": 1445
+        }
+      ]
+    }
+  ],
+  "sourceIntegrity": [
+    {
+      "file": "TELKIN_COMPLETE_PRINT_MASTER_v41.docx",
+      "sourceType": "Google Drive final print master",
+      "sha256": "a6448e2ec103e19e77da23bceb0c4a4fed99784cb60c9592a76eb273ed269fe3"
+    },
+    {
+      "file": "TELKIN-II-Google-Play-FINAL.epub",
+      "sourceType": "Library final EPUB · Google Play final",
+      "sha256": "c99a9528f6bb8c86add82dd8e5d5152476f5dc531bb18354591758e1f7632035"
+    },
+    {
+      "file": "TELKIN_III_FINAL.epub",
+      "sourceType": "Google Drive final EPUB",
+      "sha256": "6a5cea94c660670c12ef6bcb1a40728dfa7980f959c2b700026ce66d45755036"
+    },
+    {
+      "file": "TELKIN_IV_FINAL.epub",
+      "sourceType": "Google Drive final EPUB",
+      "sha256": "e2acc608302e6defeb171aebfeee98dcd82b96cacf534eb43badedeab9fe2341"
+    }
+  ]
+}
