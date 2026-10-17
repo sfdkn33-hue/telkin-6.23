@@ -41,3 +41,55 @@
  const root=document.getElementById('cutStage');
  if(root&&window.MutationObserver)new MutationObserver(ms=>{for(const m of ms)for(const n of m.addedNodes){if(n.nodeType!==1)continue;if(n.matches&&n.matches('img.cutActor'))trim(n);else if(n.querySelectorAll)n.querySelectorAll('img.cutActor').forEach(trim)}}).observe(root,{childList:true,subtree:true});
 })();
+
+/* v6.22.7 HOTFIX
+   - Hızlı menüde BÖLÜM SEÇ düğmesi gerçek pointerdown akışına bağlanır.
+   - Eren'in oyun içi billboard oranı Mahir ile daha tutarlı yetişkin ölçüsüne çekilir.
+   - Görünen sürüm etiketi 6.22.7 olarak güncellenir.
+*/
+(()=>{
+ const VERSION='6.22.7';
+
+ function dispatchPointerDown(el,src){
+   if(!el)return;
+   try{
+     if(typeof PointerEvent==='function'){
+       el.dispatchEvent(new PointerEvent('pointerdown',{
+         bubbles:true,cancelable:true,isPrimary:true,
+         pointerId:src?.pointerId||1,pointerType:src?.pointerType||'touch',
+         clientX:src?.clientX||0,clientY:src?.clientY||0
+       }));
+     }else el.dispatchEvent(new Event('pointerdown',{bubbles:true,cancelable:true}));
+   }catch(_){el.dispatchEvent(new Event('pointerdown',{bubbles:true,cancelable:true}));}
+ }
+
+ // game.js hızlı menüde chaptersBtn.click() çağırıyor; gerçek bölüm düğmesi ise pointerdown dinliyor.
+ // Orijinal handler menüyü kapattıktan sonra panel hâlâ kapalıysa doğru olayı doğrudan gönder.
+ const quick=document.getElementById('hudQuickMenu');
+ const quickChapters=quick?.querySelector('[data-open="chapters"]');
+ const chaptersBtn=document.getElementById('chaptersBtn');
+ const chaptersPanel=document.getElementById('chaptersPanel');
+ if(quickChapters&&chaptersBtn){
+   quickChapters.addEventListener('pointerdown',e=>{
+     setTimeout(()=>{
+       const open=chaptersPanel && (chaptersPanel.classList.contains('show')||chaptersPanel.getAttribute('aria-hidden')==='false');
+       if(!open)dispatchPointerDown(chaptersBtn,e);
+     },0);
+   });
+ }
+
+ // İlk bölümde görülen Eren için çocuk/minyatür hissini azalt; Mahir'e yakın yetişkin silueti koru.
+ const eren=window.TELKIN_CHARACTER_PACKS?.['EREN'];
+ if(eren){
+   eren.scale=Math.max(Number(eren.scale)||1,1.04);
+   eren.widthRatio=Math.max(Number(eren.widthRatio)||.42,.45);
+   eren.artNote=(eren.artNote||'')+' · v6.22.7 adult proportion hotfix';
+ }
+
+ const badge=document.getElementById('versionBadge');
+ if(badge)badge.textContent=`v${VERSION} · MENÜ + KARAKTER HOTFIX`;
+ const menuVersion=quick?.querySelector('.hudMenuVersion');
+ if(menuVersion)menuVersion.textContent=menuVersion.textContent.replace(/v6\.22\.6/g,`v${VERSION}`);
+ document.title=document.title.replace(/v6\.22\.6/g,`v${VERSION}`);
+ window.TELKIN_HOTFIX_VERSION=VERSION;
+})();
