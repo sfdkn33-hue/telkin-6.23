@@ -1,0 +1,45 @@
+{
+  "schema": "telkin-location-pack/1",
+  "pack": "office",
+  "version": "5.4.0",
+  "runtime": "procedural-pro",
+  "gltfRuntime": "reserved",
+  "displayName": "Mahir’in Ofisi",
+  "scale": "1 unit ≈ 1 meter",
+  "dimensions": [
+    14,
+    3,
+    14
+  ],
+  "zones": [
+    "group-session",
+    "mahir-desk",
+    "locked-back-room",
+    "entry"
+  ],
+  "anchors": {
+    "spawn": [
+      0,
+      5.2
+    ],
+    "desk": [
+      -4.55,
+      -3.8
+    ],
+    "backDoor": [
+      5.85,
+      6.88
+    ],
+    "session": [
+      0,
+      0.45
+    ]
+  },
+  "assetSlots": [
+    "models/office-main.glb",
+    "textures/walls.webp",
+    "textures/wood.webp",
+    "audio/roomtone.ogg"
+  ],
+  "productionNote": "Merkez dolaşım şeridi açık tutulur; arka kapı Bölüm 1 dramatik odağıdır."
+}

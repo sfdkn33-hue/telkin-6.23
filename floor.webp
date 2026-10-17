@@ -1,0 +1,39 @@
+{
+  "schema": "telkin-location-pack/1",
+  "pack": "management",
+  "version": "5.4.0",
+  "runtime": "procedural-pro",
+  "gltfRuntime": "reserved",
+  "displayName": "Yönetim / Güvenlik Odası",
+  "scale": "1 unit ≈ 1 meter",
+  "dimensions": [
+    14,
+    3,
+    14
+  ],
+  "zones": [
+    "cctv-wall",
+    "recording-desk",
+    "test-area",
+    "entry"
+  ],
+  "anchors": {
+    "spawn": [
+      0,
+      5.2
+    ],
+    "cctv": [
+      2.45,
+      -4.25
+    ],
+    "recording": [
+      -1.35,
+      -4.25
+    ]
+  },
+  "assetSlots": [
+    "models/management.glb",
+    "audio/server-room.ogg"
+  ],
+  "productionNote": "Bölüm 2 istasyon yapısı korunur, merkezi dolaşım açık kalır."
+}
