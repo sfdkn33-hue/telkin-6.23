@@ -90,7 +90,7 @@ const hudMenuBtn=document.getElementById('hudMenuBtn'),hudQuickMenu=document.get
 const versionBadge=document.getElementById('versionBadge');
 const cinematicUse=document.getElementById('cinematicUse'),cinUseKicker=document.getElementById('cinUseKicker'),cinUseTitle=document.getElementById('cinUseTitle'),cinUseMeta=document.getElementById('cinUseMeta'),vfLabel=document.getElementById('vfLabel'),cinPhoneState=document.getElementById('cinPhoneState'),cinPhoneName=document.getElementById('cinPhoneName'),cinDocKicker=document.getElementById('cinDocKicker'),cinDocTitle=document.getElementById('cinDocTitle'),cinDocGoal=document.getElementById('cinDocGoal');
 let cinematicUseLastKey='';
-const storyBtn=document.getElementById('storyBtn'),storyPanel=document.getElementById('storyPanel'),storyClose=document.getElementById('storyClose'),storyPanelTitle=document.getElementById('storyPanelTitle'),storyPanelBody=document.getElementById('storyPanelBody');if(versionBadge)versionBadge.textContent='v6.22.3 · PWA KURULUM DÜZELTMESİ';
+const storyBtn=document.getElementById('storyBtn'),storyPanel=document.getElementById('storyPanel'),storyClose=document.getElementById('storyClose'),storyPanelTitle=document.getElementById('storyPanelTitle'),storyPanelBody=document.getElementById('storyPanelBody');if(versionBadge)versionBadge.textContent='v6.22.4 · YATAY KONTROL DÜZELTMESİ';
 const chaptersBtn=document.getElementById('chaptersBtn'),chaptersPanel=document.getElementById('chaptersPanel'),chaptersClose=document.getElementById('chaptersClose');
 const volTabs=document.getElementById('volTabs'),chapterGrid=document.getElementById('chapterGrid'),chapterDetail=document.getElementById('chapterDetail');
 const chapterJumpInput=document.getElementById('chapterJumpInput'),chapterJumpGo=document.getElementById('chapterJumpGo'),inspectionBar=document.getElementById('inspectionBar'),inspectionLabel=document.getElementById('inspectionLabel'),inspectionPrev=document.getElementById('inspectionPrev'),inspectionNext=document.getElementById('inspectionNext'),inspectionReturn=document.getElementById('inspectionReturn');
@@ -4651,7 +4651,7 @@ function update(dt){
  updateMahirUseAction(performance.now());
  if(!isPaused()&&!mahirSeatState.active){
    // v0.7.4: v0.7.3 kontrol yönü korunur: joystick yukarı (joyY<0) = ileri.
-   // v6.22.1: joystick yatay ekseni ekran yönüyle eşlendi: sağ=+jx, sol=-jx.
+   // v6.22.4: kamera view matrisinin ekran-sağ bazıyla hareket bazı eşlendi; joystick sağ ekranda sağa gider.
    const dead=.10;
    let jx=Math.abs(joyX)<dead?0:Math.sign(joyX)*(Math.abs(joyX)-dead)/(1-dead);
    let jy=Math.abs(joyY)<dead?0:Math.sign(joyY)*(Math.abs(joyY)-dead)/(1-dead);
@@ -4661,7 +4661,7 @@ function update(dt){
    const mag=Math.hypot(f,r);if(mag>1){f/=mag;r/=mag;}
    const sprint=running||keys.ShiftLeft||keys.ShiftRight;
    const speed=sprint?3.7:2.35;
-   const fx=Math.sin(yaw),fz=Math.cos(yaw),rx=Math.cos(yaw),rz=-Math.sin(yaw);
+   const fx=Math.sin(yaw),fz=Math.cos(yaw),rx=-Math.cos(yaw),rz=Math.sin(yaw);
    const vx=fx*f+rx*r,vz=fz*f+rz*r;
    const dx=vx*speed*dt,dz=vz*speed*dt;
    const moved=moveWithCollision(dx,dz);movedThisFrame=moved;sprintThisFrame=!!sprint;
@@ -4898,7 +4898,7 @@ console.info('[TELKIN v6.22.1 STAGING] KONTROL DÜZELTMESİ · JOYSTICK SOL/SAĞ
 
 function refreshRuntimeLanguage(){
  try{
-  if(versionBadge)versionBadge.textContent='v6.22.3 · PWA KURULUM DÜZELTMESİ';
+  if(versionBadge)versionBadge.textContent='v6.22.4 · YATAY KONTROL DÜZELTMESİ';
   if(soundBtn)soundBtn.textContent=audioOn?TT('ui.soundOn','SES: AÇIK'):TT('ui.soundOff','SES: KAPALI');
   if(interact)interact.textContent=isDialogueOpen?TT('ui.continue','DEVAM'):TT('ui.interact','ETKİLEŞ');
   updateArcadeButton();

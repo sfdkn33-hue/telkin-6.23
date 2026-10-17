@@ -1,0 +1,16 @@
+TELKİN v6.22.4 — YATAY KONTROL DÜZELTMESİ
+
+Kök neden:
+- Kamera lookAt matrisi ekranın sağ yönünü (-cos(yaw), +sin(yaw)) olarak kuruyor.
+- Hareket motoru ise bunun tersini (+cos(yaw), -sin(yaw)) kullanıyordu.
+- Bu yüzden joystick sağa çekildiğinde karakter ekranda sola, sola çekildiğinde sağa gidiyordu.
+
+Düzeltme:
+- Joystick verisi değiştirilmedi: sağ = +joyX, sol = -joyX.
+- Kamera göreli sağ vektörü düzeltildi: rx=-cos(yaw), rz=+sin(yaw).
+- Klavye D/A yönleri de aynı anda ekran yönüyle uyumlu hale geldi.
+- v6.22.2'deki karakter sol/sağ görsel eşlemesi ve v6.22.3 PWA kurulumu korunur.
+- Service Worker cache v6.22.4'e yükseltildi.
+
+GitHub Desktop:
+ZIP içindeki dosya/klasörleri telkin-6.23 yerel repo klasörünün üzerine kopyala -> Replace -> Commit to main -> Push origin.
