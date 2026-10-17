@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>TELKİN 3D EVREN v6.22.1 — TAM ROMAN · SİNEMATİK NESNE ODAĞI · MEKÂN · ARCADE · SES · ÇOK DİL</title>
+<link rel="stylesheet" href="css/game.css">
+<link rel="manifest" href="manifest.webmanifest">
+
+
+</head>
+<body>
+<canvas id="gl"></canvas>
+<div id="filmGrade" aria-hidden="true"></div>
+<div id="top" class="ui">
+ <div class="badge"><small>TELKİN 3D EVREN</small><b id="versionBadge">v6.22.1 · CONTROL FIX</b></div>
+ <div class="badge" style="text-align:right"><small data-i18n="hud.scale">ÖLÇEK</small><b data-i18n="hud.scaleValue">1 BİRİM = 1 METRE</b><br><span id="coord"></span></div>
+</div>
+<div id="zone" class="ui">MAHİR'İN OFİSİ</div>
+<div id="cross" class="ui"></div>
+<div id="prompt" class="ui"></div>
+<div id="joy" class="ui"><div id="knob"></div></div>
+<button id="run" class="ui" data-i18n="ui.run">KOŞ</button>
+<button id="interact" class="ui" data-i18n="ui.interact">ETKİLEŞ</button>
+<div id="dialogue" class="ui"><div id="dlgProgress"><i></i></div><div id="speaker"></div><div id="text"></div></div>
+
+<div id="chapterInterlude" aria-hidden="true">
+ <div class="ciCard">
+  <small id="ciKicker" class="ciKicker">BÖLÜME HAZIRLIK</small>
+  <h2 id="ciTitle">BÖLÜM</h2>
+  <div id="ciSub" class="ciSub"></div>
+  <div id="ciBody" class="ciBody"></div>
+  <div id="ciMeta" class="ciMeta"></div>
+  <div class="ciActions"><button id="ciContinue">BÖLÜME BAŞLA</button></div>
+  <div class="ciHint" data-i18n="interlude.hint">ETKİLEŞ / E ile devam edebilirsin.</div>
+ </div>
+</div>
+
+<div id="objective" class="ui">GÖRÜNEN DÜNYA · OFİS → ŞEHİR → EVLER → MAĞARA / KRİZ HATTI → DOKU EŞİĞİ</div>
+<div id="taskGuide" class="ui"></div>
+<div id="missionCard"><small id="missionStep">GÖREV</small><b id="missionTitle">HEDEF</b><span id="missionHint">Mavi işareti takip et.</span></div>
+<div id="chapterIdentity"><small id="chapterIdentityMode">BÖLÜM KİMLİĞİ</small><b id="chapterIdentityTitle">SİSTEM</b><span id="chapterIdentityFlow">AKIŞ</span></div>
+<div id="actionFocus"><span id="actionFocusLabel">İNCELENİYOR</span><div class="actionTrack"><i id="actionFocusFill"></i></div></div>
+<div id="cinematicUse" aria-hidden="true" data-kind="">
+ <div class="cinUseLetter cinUseLetterTop"></div><div class="cinUseLetter cinUseLetterBottom"></div>
+ <div class="cinUseInfo"><small id="cinUseKicker">NESNE ODAĞI</small><b id="cinUseTitle">ETKİLEŞİM</b><span id="cinUseMeta"></span></div>
+ <div class="cinViewfinder" aria-hidden="true"><i class="vfCorner tl"></i><i class="vfCorner tr"></i><i class="vfCorner bl"></i><i class="vfCorner br"></i><span class="vfRec">● REC</span><span class="vfFocus">＋</span><em id="vfLabel">KADRAJ</em></div>
+ <div class="cinPhone" aria-hidden="true"><small id="cinPhoneState">BAĞLANIYOR</small><b id="cinPhoneName">HAT</b><span class="cinPhoneWave"><i></i><i></i><i></i><i></i><i></i></span></div>
+ <div class="cinDocument" aria-hidden="true"><small id="cinDocKicker">OKUMA ODAĞI</small><b id="cinDocTitle">BELGE</b><span id="cinDocGoal"></span><div class="cinDocLines"><i></i><i></i><i></i><i></i></div></div>
+</div>
+<div id="desktopHint" class="ui" data-i18n="hud.desktopHint">WASD / OKLAR: YÜRÜ · SHIFT: KOŞ · E: ETKİLEŞ · B: 144 BÖLÜM · M: 108 MEKÂN · A: ARCADE · N: NİHYEL · U: EVREN · H: ROMAN · ESC: KAPAT</div>
+<button id="soundBtn" class="ui" data-i18n="ui.soundOff">SES: KAPALI</button>
+<button id="nihyelBtn" class="ui">NİHYEL</button>
+<div id="saveMark" class="ui" data-i18n="ui.saved">KAYDEDİLDİ</div>
+<button id="universeBtn" class="ui" data-i18n="ui.universe">EVREN</button>
+<button id="storyBtn" class="ui" data-i18n="ui.novel">ROMAN</button>
+<div id="storyPanel" class="ui" aria-hidden="true">
+  <div class="sWrap">
+    <div class="sHead"><div><small data-i18n="reader.header">TELKİN · TAM ROMAN OKUYUCU</small><b id="storyPanelTitle" data-i18n="reader.fullChapter">BÖLÜMÜN TAM METNİ</b></div><button id="storyClose" class="sClose">×</button></div>
+    <div id="storyPanelBody"></div>
+  </div>
+</div>
+
+<button id="chaptersBtn" class="ui" data-i18n="ui.chapters">144 BÖLÜM</button>
+<button id="locationsBtn" class="ui" data-i18n="ui.locations">108 MEKÂN</button>
+<button id="arcadeBtn" class="ui" data-i18n="ui.arcade">ARCADE</button>
+<button id="hudMenuBtn" class="ui" aria-label="Menü" data-i18n-aria="ui.menu">☰</button>
+<div id="hudQuickMenu" aria-hidden="true"><div class="hudMenuVersion">TELKİN · v6.22.1 · KONTROL DÜZELTMESİ · UZUN SÜRÜM OYNANIŞ · TAM ROMAN · EREN 12/12 · KAYITÇI 12/12 · LEYLA 12/12 · SELİN 12/12 · SUNA 12/12 · MUHAFIZ 12/12 · DOKTOR 12/12 · NİSAN 12/12 · MİNA 12/12 · BARAN 12/12 · MEKÂN · 14 OYUN · SES · I18N</div>
+ <button data-open="chapters" data-i18n="ui.chapters">144 BÖLÜM</button><button data-open="locations" data-i18n="ui.locations">108 MEKÂN</button>
+ <button data-open="story" data-i18n="ui.novel">ROMAN</button><button data-open="arcade" data-i18n="ui.arcade">ARCADE</button>
+ <button data-open="universe" data-i18n="ui.universe">EVREN</button><button data-open="sound" data-i18n="ui.sound">SES</button>
+ <button data-open="nihyel">NİHYEL</button><button id="missionRecall" data-i18n="ui.missionShow">GÖREVİ GÖSTER</button>
+ <button id="langBtn" class="wide" data-i18n="ui.languageButton">DİL · TR</button><button id="hudMenuClose" class="wide primary" data-i18n="ui.returnGame">OYUNA DÖN</button>
+</div>
+<div id="arcadePanel" aria-hidden="true">
+ <div class="arcadeCard">
+  <div class="arcadeHead"><div><small data-i18n="arcade.header">TELKİN · RETRO ÖDÜL</small><b id="arcadeTitle">ARCADE</b></div><button id="arcadeClose">×</button></div>
+  <div id="arcadeDesc" data-i18n="arcade.desc">Mini oyunu kazanırsan bu bölümde görev işaretleri ve yön oku açılır. Oynamazsan yalnız metre hesabıyla hedefi yine bulabilirsin.</div>
+  <div class="arcadeMeta"><span id="arcadeGenre">ARCADE</span><span id="arcadeControl">DOKUN</span><span data-i18n="arcade.games">14 OYUN</span></div>
+  <div id="arcadeShelf" aria-label="Arcade oyun seçimi" data-i18n-aria="arcade.selectionAria"></div>
+  <canvas id="arcadeCanvas" width="400" height="300"></canvas>
+  <div id="arcadeEmbed"><iframe id="arcadeFrame" sandbox="allow-scripts allow-same-origin"></iframe></div>
+  <div id="arcadePads"><button data-pad="0">●</button><button data-pad="1">●</button><button data-pad="2">●</button><button data-pad="3">●</button></div>
+  <div class="arcadeFoot"><span id="arcadeStatus" data-i18n="ui.ready">HAZIR</span><div><button id="arcadeStart" data-i18n="ui.play">OYNA</button> <button id="arcadeSkip" data-i18n="ui.skipGame">OYUNSUZ DEVAM</button></div></div>
+ </div>
+</div>
+<div id="atlasBadge" class="atlasBadge">144 BÖLÜM MEKÂN ATLASI</div>
+<div id="inspectionBar" class="ui" aria-hidden="true"><button id="inspectionPrev" title="Önceki bölüm" data-i18n-title="chaptersPanel.prev">←</button><b id="inspectionLabel">İNCELEME · BÖLÜM 001</b><button id="inspectionNext" title="Sonraki bölüm" data-i18n-title="chaptersPanel.next">→</button><button id="inspectionReturn" class="return" data-i18n="chaptersPanel.returnProgress">İLERLEMEME DÖN</button></div>
+<div id="chaptersPanel" class="ui" aria-hidden="true">
+ <div class="cWrap">
+  <div class="cHead"><div><small>TELKİN · I–II–III–IV</small><b data-i18n="chaptersPanel.header">144 BÖLÜM · MEKÂN ATLASI</b></div><button id="chaptersClose" class="cClose">×</button></div>
+  <div class="cStats"><div class="cStat"><small data-i18n="chaptersPanel.chapter">BÖLÜM</small><b>144</b></div><div class="cStat"><small data-i18n="chaptersPanel.uniqueLocations">BENZERSİZ MEKÂN</small><b id="locCount">0</b></div><div class="cStat"><small data-i18n="chaptersPanel.completed">TAMAMLANAN</small><b id="doneCount">0</b></div></div>
+  <div class="chapterJump"><span data-i18n="chaptersPanel.jump">BÖLÜME ATLA</span><input id="chapterJumpInput" type="number" inputmode="numeric" min="1" max="144" value="1" aria-label="Bölüm numarası" data-i18n-aria="chaptersPanel.jumpAria"><button id="chapterJumpGo" data-i18n="ui.select">SEÇ</button><em data-i18n="chaptersPanel.jumpNote">1–144 arası tüm bölümler incelemeye açık. Ana ilerleme değişmez.</em></div>
+  <div id="volTabs" class="volTabs"></div>
+  <div id="chapterGrid" class="chapterGrid"></div>
+  <div id="chapterDetail" class="chapterDetail"></div>
+ </div>
+</div>
+
+
+<div id="locationsPanel" class="ui" aria-hidden="true">
+ <div class="lWrap">
+  <div class="lHead"><div><small data-i18n="locationsPanel.headerSmall">TELKİN · SERBEST KEŞİF</small><b data-i18n="locationsPanel.header">108 MEKÂN · GÖRSEL ATLAS</b></div><button id="locationsClose" class="lClose">×</button></div>
+  <input id="locationSearch" class="locSearch" type="search" placeholder="Mekân ara… örn. mağara, ev, hastane, Bağdat" data-i18n-placeholder="locationsPanel.search">
+  <div id="locationTabs" class="locTabs"></div>
+  <div id="locationActions" class="locActions"></div>
+  <div id="locationGrid" class="locationGrid"></div>
+ </div>
+</div>
+
+<div id="universePanel" class="ui" aria-hidden="true">
+  <div class="uHead"><div><small data-i18n="universePanel.headerSmall">TELKİN · ONTOLOJİ HARİTASI</small><b data-i18n="universePanel.header">EVREN OMURGASI</b></div><button id="universeClose">×</button></div>
+  <div class="uRule" data-i18n="universePanel.rule">144 bölümün 108 benzersiz mekânı görsel olarak tasarlandı. 108 MEKÂN menüsünden her sahneye doğrudan girebilirsin.</div>
+  <div id="universeLayers"></div>
+</div>
+
+<div id="languagePanel" class="ui" aria-hidden="true">
+ <div class="langCard">
+  <div class="langHead"><div><small>TELKİN · I18N</small><b data-i18n="language.title">DİL / LANGUAGE</b></div><button id="languageClose" aria-label="Kapat" data-i18n-aria="language.close">×</button></div>
+  <div class="langSectionTitle" data-i18n="language.uiLanguage">ARAYÜZ DİLİ</div>
+  <div class="langOptions">
+   <button data-set-lang="tr"><strong>TR</strong><span data-i18n="language.turkish">Türkçe</span><em data-i18n="language.active">AKTİF</em></button>
+   <button data-set-lang="en"><strong>EN</strong><span data-i18n="language.english">English</span><em data-i18n="language.beta">BETA</em></button>
+  </div>
+  <div class="langSectionTitle" data-i18n="language.contentLanguage">İÇERİK DİLİ</div>
+  <p data-i18n="language.contentTr">Roman ve oyun hikâyesinin ana kaynak dili Türkçedir.</p>
+  <p class="langNote" data-i18n="language.englishNote">İngilizce arayüz kullanılabilir; 144 bölümün İngilizce roman/hikâye çevirisi henüz eklenmedi.</p>
+ </div>
+</div>
+<div id="cinema" aria-hidden="true"></div>
+<div id="nihyelVeil" aria-hidden="true"></div>
+<div id="fade"></div>
+<div id="fallback" data-i18n="fallback.webgl">Bu cihazda WebGL açılamadı. Tarayıcı ayarlarında donanım hızlandırmayı etkinleştirmek gerekebilir.</div>
+
+
+<div id="longPlayScene" aria-hidden="true">
+ <div class="lpShell">
+  <div class="lpTop"><div><small id="lpKicker">TELKİN · UZUN SÜRÜM</small><b id="lpTitle">BÖLÜM</b></div><button id="lpSkip" type="button">SAHNEYİ ATLA</button></div>
+  <div class="lpMeta"><span id="lpLocation"></span><span id="lpProgress"></span></div>
+  <div id="lpBody" class="lpBody"></div>
+  <div class="lpBottom"><div class="lpReadBar"><i id="lpReadBar"></i></div><button id="lpNext" type="button">DEVAM ET</button></div>
+ </div>
+</div>
+<div id="storyCutscene" aria-hidden="true"><div id="cutStage" class="cutStage"></div></div>
+<div id="gameMechanic" aria-hidden="true"><div id="gameMechanicCard" class="card"></div></div>
+<div id="gameToast"></div>
+<div id="gameModeBadge"></div>
+
+
+
+
+<!-- v3.8.2 · HOSTED MODE CC0 HUMANOID RIG KATMANI
+     Quaternius Universal Base Characters + Universal Animation Library (CC0).
+     Ağ yoksa veya model yüklenemezse native WebGL NPC otomatik yedektir. -->
+
+
+
+
+<script src="src/data/assets.js"></script>
+<script src="src/data/character-packs.js"></script>
+<script src="src/data/location-packs.js"></script>
+<script src="src/data/story.js"></script>
+<script src="src/data/locations.js"></script>
+<script src="src/data/gameplay.js"></script>
+<script src="src/i18n/loader.js"></script>
+<script src="src/data/long-play.js"></script>
+<script src="src/novel/reader.js"></script>
+<script src="src/novel/playback.js"></script>
+<script src="src/arcade/catalog.js"></script>
+<script src="src/core/location-loader.js"></script>
+<script src="src/audio/presets.js"></script>
+<script src="src/audio/manager.js"></script>
+<script src="src/core/game.js"></script>
+<script src="src/core/rig-stub.js"></script>
+<script src="src/core/cutscene-trim.js"></script>
+<script>
+if('serviceWorker' in navigator && location.protocol.startsWith('http')){
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(e=>console.warn('[TELKIN SW]',e)));
+}
+</script>
+
+</body>
+</html>

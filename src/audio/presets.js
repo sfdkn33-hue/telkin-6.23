@@ -1,0 +1,51 @@
+(()=>{
+  const PRESETS={
+    warmWork:{rain:.010,hum:.022,air:.010,city:.006,cave:0,water:0,fire:0,wind:0,doku:0},
+    coolWork:{rain:.014,hum:.026,air:.016,city:.004,cave:0,water:0,fire:0,wind:0,doku:0},
+    clinical:{rain:.004,hum:.031,air:.024,city:0,cave:0,water:0,fire:0,wind:0,doku:0},
+    softClinical:{rain:.004,hum:.020,air:.016,city:0,cave:0,water:0,fire:0,wind:0,doku:0},
+    warmHome:{rain:.008,hum:.012,air:.006,city:.003,cave:0,water:0,fire:0,wind:0,doku:0},
+    uncannyHome:{rain:.012,hum:.018,air:.007,city:.002,cave:.004,water:0,fire:0,wind:0,doku:.008},
+    sepiaHome:{rain:.004,hum:.010,air:.004,city:0,cave:0,water:0,fire:0,wind:.002,doku:0},
+    warmStreet:{rain:.028,hum:.002,air:0,city:.038,cave:0,water:0,fire:0,wind:.016,doku:0},
+    coldStreet:{rain:.038,hum:.003,air:0,city:.025,cave:0,water:0,fire:0,wind:.030,doku:0},
+    nightBlue:{rain:.050,hum:.002,air:0,city:.026,cave:0,water:0,fire:0,wind:.036,doku:0},
+    dayWork:{rain:.012,hum:.012,air:.008,city:.010,cave:0,water:0,fire:0,wind:.006,doku:0},
+    stage:{rain:.002,hum:.018,air:.010,city:0,cave:0,water:0,fire:0,wind:0,doku:0},
+    darkWork:{rain:.006,hum:.030,air:.009,city:0,cave:.003,water:0,fire:0,wind:0,doku:.003},
+    coldTransport:{rain:.024,hum:.018,air:.012,city:.015,cave:0,water:.008,fire:0,wind:.030,doku:0},
+    rain:{rain:.115,hum:.002,air:0,city:.014,cave:0,water:.010,fire:0,wind:.050,doku:0},
+    cave:{rain:.002,hum:.001,air:0,city:0,cave:.080,water:.008,fire:0,wind:.008,doku:.004},
+    caveWater:{rain:.002,hum:.001,air:0,city:0,cave:.070,water:.055,fire:0,wind:.004,doku:.005},
+    dokuCave:{rain:.001,hum:.001,air:0,city:0,cave:.065,water:.010,fire:0,wind:.006,doku:.050},
+    doku:{rain:.002,hum:.004,air:0,city:0,cave:.015,water:0,fire:0,wind:.012,doku:.060},
+    dream:{rain:.004,hum:.003,air:0,city:0,cave:.010,water:.010,fire:0,wind:.022,doku:.035},
+    map:{rain:.002,hum:.012,air:.004,city:0,cave:0,water:0,fire:0,wind:.006,doku:.020},
+    void:{rain:0,hum:.003,air:0,city:0,cave:.025,water:0,fire:0,wind:.006,doku:.055},
+    text:{rain:0,hum:.010,air:0,city:0,cave:0,water:0,fire:0,wind:.003,doku:.028},
+    fire:{rain:.002,hum:.002,air:0,city:.004,cave:0,water:0,fire:.095,wind:.026,doku:0},
+    campfire:{rain:.004,hum:.001,air:0,city:0,cave:0,water:0,fire:.052,wind:.025,doku:0},
+    ancientWarm:{rain:.002,hum:.001,air:0,city:.004,cave:0,water:0,fire:.010,wind:.022,doku:0},
+    ancientHot:{rain:0,hum:.001,air:0,city:.002,cave:0,water:0,fire:.004,wind:.035,doku:0},
+    ancientDust:{rain:0,hum:.001,air:0,city:0,cave:0,water:0,fire:.003,wind:.048,doku:0},
+    ancientNight:{rain:.001,hum:.001,air:0,city:.002,cave:0,water:0,fire:.012,wind:.030,doku:.002},
+    dryNature:{rain:0,hum:0,air:0,city:0,cave:0,water:0,fire:0,wind:.055,doku:0},
+    greenNature:{rain:.012,hum:0,air:0,city:0,cave:0,water:.004,fire:0,wind:.040,doku:0},
+    nightNature:{rain:.012,hum:0,air:0,city:0,cave:0,water:.002,fire:0,wind:.052,doku:.002},
+    coldNature:{rain:.005,hum:0,air:0,city:0,cave:0,water:0,fire:0,wind:.065,doku:0},
+    waterNature:{rain:.006,hum:0,air:0,city:0,cave:0,water:.065,fire:0,wind:.030,doku:0},
+    storm:{rain:.125,hum:0,air:0,city:0,cave:.002,water:.012,fire:0,wind:.090,doku:.002},
+    sandstorm:{rain:0,hum:0,air:0,city:0,cave:0,water:0,fire:0,wind:.125,doku:.004},
+    dawn:{rain:.003,hum:0,air:0,city:0,cave:0,water:.004,fire:0,wind:.028,doku:0}
+  };
+  const SURFACES={
+    office:{step:'wood'},home:{step:'wood'},alternateHome:{step:'wood'},sunahome:{step:'wood'},familyhome:{step:'wood'},rizaHome:{step:'wood'},pastHome:{step:'wood'},kitchen:{step:'tile'},arelHouse:{step:'wood'},
+    lab:{step:'tile'},visionlab:{step:'tile'},hospital:{step:'tile'},hospitalMemory:{step:'tile'},therapy:{step:'tile'},corridorlab:{step:'tile'},elevator:{step:'metal'},
+    archive:{step:'concrete'},storageFacility:{step:'concrete'},management:{step:'carpet'},center:{step:'carpet'},university:{step:'tile'},schoolNight:{step:'tile'},eventhall:{step:'wood'},studio:{step:'wood'},
+    cave:{step:'stone'},cistern:{step:'stone'},recordCave:{step:'stone'},caveVision:{step:'stone'},tomb:{step:'stone'},tombValley:{step:'stone'},quarry:{step:'stone'},
+    ancientMesopotamia:{step:'dust'},ancientStreet:{step:'dust'},ancientCity:{step:'stone'},baghdad:{step:'stone'},egyptVillage:{step:'dust'},granary:{step:'wood'},kiln:{step:'stone'},
+    dryPlain:{step:'dust'},ancientRoad:{step:'dust'},ancientPath:{step:'dust'},boundaryLand:{step:'dust'},sandstorm:{step:'dust'},
+    shore:{step:'gravel'},river:{step:'gravel'},riverVillage:{step:'dirt'},prehumanCoast:{step:'gravel'},park:{step:'dirt'},hillside:{step:'dirt'},mountainTrail:{step:'gravel'},huntTrail:{step:'dirt'}
+  };
+  window.TELKIN_AUDIO_PRESETS={PRESETS,SURFACES};
+})();

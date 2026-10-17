@@ -1,0 +1,20 @@
+{
+  "version": "5.5.0",
+  "rewardPolicy": "advantage-not-gate",
+  "games": [
+    {"id":"REFLEKS","engine":"canvas","control":"tap"},
+    {"id":"YILAN","engine":"canvas","control":"swipe"},
+    {"id":"HAFIZA","engine":"pads","control":"tap"},
+    {"id":"RAKET","engine":"canvas","control":"drag"},
+    {"id":"KAÇIŞ","engine":"canvas","control":"drag"},
+    {"id":"KATMAN KIR","engine":"canvas","control":"drag"},
+    {"id":"METEOR","engine":"canvas","control":"drag"},
+    {"id":"SATRANÇ","engine":"canvas","control":"tap"},
+    {"id":"TAVLA","engine":"canvas","control":"tap"},
+    {"id":"TAŞ STRATEJİ","engine":"iframe","path":"arcade/tas-strateji/index.html","control":"tap"},
+    {"id":"LABİRENT","engine":"canvas","control":"swipe"},
+    {"id":"2048","engine":"canvas","control":"swipe"},
+    {"id":"KUTU İT","engine":"canvas","control":"swipe"},
+    {"id":"KOD KIR","engine":"pads","control":"tap"}
+  ]
+}

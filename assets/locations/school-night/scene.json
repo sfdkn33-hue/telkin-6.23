@@ -1,0 +1,39 @@
+{
+  "schema": "telkin-location-pack/1",
+  "pack": "school-night",
+  "version": "5.4.0",
+  "runtime": "procedural-pro",
+  "gltfRuntime": "reserved",
+  "displayName": "Gece Okulu",
+  "scale": "1 unit ≈ 1 meter",
+  "dimensions": [
+    22,
+    7,
+    24
+  ],
+  "zones": [
+    "school-front",
+    "gate",
+    "yard",
+    "lit-classrooms"
+  ],
+  "anchors": {
+    "spawn": [
+      0,
+      5.2
+    ],
+    "gate": [
+      0,
+      -5.5
+    ],
+    "yard": [
+      0,
+      0
+    ]
+  },
+  "assetSlots": [
+    "models/school-night.glb",
+    "audio/night-school.ogg"
+  ],
+  "productionNote": "Boş okul gecesi: gerçekçi ama aşırı korku oyunu klişesine kaçmayan gündelik mimari."
+}

@@ -1,0 +1,11 @@
+{
+  "name": "TELKİN — Sinematik Roman Evreni",
+  "short_name": "TELKİN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#030509",
+  "theme_color": "#030509",
+  "lang": "tr",
+  "description": "TELKİN sinematik roman / oyun — modüler GitHub sürümü; Cilt I tam roman okuyucu."
+}

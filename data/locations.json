@@ -1,0 +1,965 @@
+{
+  "office": {
+    "label": "Mahir’in Ofisi",
+    "type": "work",
+    "chapters": [
+      1,
+      3,
+      4,
+      16,
+      17,
+      18,
+      37,
+      38,
+      42,
+      43,
+      45,
+      46,
+      51,
+      53,
+      54,
+      57,
+      59,
+      60,
+      64,
+      65,
+      67,
+      68,
+      69,
+      71,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      140,
+      142
+    ]
+  },
+  "corridor": {
+    "label": "Koridor",
+    "type": "work",
+    "chapters": [
+      1
+    ]
+  },
+  "management": {
+    "label": "Yönetim",
+    "type": "work",
+    "chapters": [
+      2
+    ]
+  },
+  "lab": {
+    "label": "Laboratuvar",
+    "type": "work",
+    "chapters": [
+      5,
+      6,
+      11,
+      39,
+      40,
+      44,
+      48,
+      49,
+      50,
+      52,
+      53,
+      56,
+      58,
+      60,
+      63,
+      64,
+      65,
+      66,
+      68,
+      77,
+      90,
+      91,
+      97,
+      104,
+      108,
+      138
+    ]
+  },
+  "visionlab": {
+    "label": "Görü Laboratuvarı",
+    "type": "work",
+    "chapters": [
+      7
+    ]
+  },
+  "bakeryStreet": {
+    "label": "Fırın Sokağı",
+    "type": "urban",
+    "chapters": [
+      8
+    ]
+  },
+  "alley": {
+    "label": "Dar Sokak",
+    "type": "urban",
+    "chapters": [
+      9
+    ]
+  },
+  "courtyard": {
+    "label": "Avlu",
+    "type": "urban",
+    "chapters": [
+      10,
+      25,
+      67
+    ]
+  },
+  "university": {
+    "label": "Üniversite",
+    "type": "work",
+    "chapters": [
+      12,
+      40,
+      41,
+      43,
+      45,
+      46,
+      47,
+      53,
+      57,
+      69
+    ]
+  },
+  "archive": {
+    "label": "Arşiv",
+    "type": "work",
+    "chapters": [
+      13,
+      43,
+      46,
+      48,
+      99,
+      120,
+      123,
+      128,
+      139
+    ]
+  },
+  "oldstreet": {
+    "label": "Eski Sokak",
+    "type": "urban",
+    "chapters": [
+      14,
+      61
+    ]
+  },
+  "hospitalMemory": {
+    "label": "Hastane Hatırası",
+    "type": "work",
+    "chapters": [
+      15,
+      24
+    ]
+  },
+  "workshop": {
+    "label": "Atölye",
+    "type": "work",
+    "chapters": [
+      19,
+      26,
+      47
+    ]
+  },
+  "construction": {
+    "label": "İnşaat",
+    "type": "urban",
+    "chapters": [
+      20
+    ]
+  },
+  "home": {
+    "label": "Ev",
+    "type": "home",
+    "chapters": [
+      21,
+      37,
+      41,
+      42,
+      44,
+      49,
+      51,
+      55,
+      56,
+      57,
+      58,
+      62,
+      65,
+      69,
+      70,
+      73,
+      76,
+      77,
+      78,
+      85,
+      90,
+      97,
+      99,
+      103,
+      104,
+      105,
+      107,
+      109,
+      116,
+      119,
+      120,
+      127,
+      130,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144
+    ]
+  },
+  "alternateHome": {
+    "label": "Alternatif Ev",
+    "type": "home",
+    "chapters": [
+      22
+    ]
+  },
+  "schoolstreet": {
+    "label": "Okul Sokağı",
+    "type": "urban",
+    "chapters": [
+      23,
+      47
+    ]
+  },
+  "eventhall": {
+    "label": "Etkinlik Salonu",
+    "type": "work",
+    "chapters": [
+      27,
+      142
+    ]
+  },
+  "city": {
+    "label": "Şehir",
+    "type": "urban",
+    "chapters": [
+      28,
+      55,
+      70,
+      137
+    ]
+  },
+  "sunahome": {
+    "label": "Suna’nın Evi",
+    "type": "home",
+    "chapters": [
+      29,
+      39,
+      48,
+      52,
+      59
+    ]
+  },
+  "familyhome": {
+    "label": "Aile Evi",
+    "type": "home",
+    "chapters": [
+      30,
+      63
+    ]
+  },
+  "threshold": {
+    "label": "Eşik",
+    "type": "abstract",
+    "chapters": [
+      31,
+      32,
+      67,
+      72,
+      99,
+      108,
+      130,
+      131
+    ]
+  },
+  "officeNight": {
+    "label": "Gece Ofisi",
+    "type": "work",
+    "chapters": [
+      33,
+      42,
+      59,
+      61,
+      62
+    ]
+  },
+  "studio": {
+    "label": "Stüdyo",
+    "type": "work",
+    "chapters": [
+      34
+    ]
+  },
+  "dokuSystem": {
+    "label": "Doku Sistemi",
+    "type": "abstract",
+    "chapters": [
+      35
+    ]
+  },
+  "worldmap": {
+    "label": "Dünya Haritası",
+    "type": "abstract",
+    "chapters": [
+      36,
+      37,
+      64
+    ]
+  },
+  "dreamspace": {
+    "label": "Rüya Alanı",
+    "type": "abstract",
+    "chapters": [
+      38,
+      45,
+      49
+    ]
+  },
+  "cafe": {
+    "label": "Kafe",
+    "type": "urban",
+    "chapters": [
+      39,
+      50,
+      55,
+      60,
+      138
+    ]
+  },
+  "apartment": {
+    "label": "Apartman",
+    "type": "home",
+    "chapters": [
+      40
+    ]
+  },
+  "market": {
+    "label": "Pazar",
+    "type": "urban",
+    "chapters": [
+      41
+    ]
+  },
+  "street": {
+    "label": "Sokak",
+    "type": "urban",
+    "chapters": [
+      44,
+      111,
+      113,
+      117,
+      141
+    ]
+  },
+  "therapy": {
+    "label": "Terapi Odası",
+    "type": "work",
+    "chapters": [
+      50
+    ]
+  },
+  "corridorlab": {
+    "label": "Laboratuvar Koridoru",
+    "type": "work",
+    "chapters": [
+      51,
+      52,
+      61,
+      62,
+      63
+    ]
+  },
+  "ferry": {
+    "label": "Vapur",
+    "type": "transport",
+    "chapters": [
+      54
+    ]
+  },
+  "metro": {
+    "label": "Metro",
+    "type": "transport",
+    "chapters": [
+      54,
+      58
+    ]
+  },
+  "cemetery": {
+    "label": "Mezarlık",
+    "type": "urban",
+    "chapters": [
+      56
+    ]
+  },
+  "elevator": {
+    "label": "Asansör",
+    "type": "transport",
+    "chapters": [
+      66
+    ]
+  },
+  "center": {
+    "label": "Merkez",
+    "type": "work",
+    "chapters": [
+      68,
+      71,
+      72
+    ]
+  },
+  "park": {
+    "label": "Park",
+    "type": "urban",
+    "chapters": [
+      70,
+      104
+    ]
+  },
+  "splitCorridor": {
+    "label": "Bölünmüş Koridor",
+    "type": "work",
+    "chapters": [
+      71,
+      72
+    ]
+  },
+  "rizaHome": {
+    "label": "Rıza’nın Evi",
+    "type": "home",
+    "chapters": [
+      73
+    ]
+  },
+  "pastHome": {
+    "label": "Geçmişteki Ev",
+    "type": "home",
+    "chapters": [
+      73,
+      74,
+      75,
+      76,
+      103
+    ]
+  },
+  "rainStreet": {
+    "label": "Yağmur Sokağı",
+    "type": "urban",
+    "chapters": [
+      75,
+      103
+    ]
+  },
+  "ancientMesopotamia": {
+    "label": "Antik Mezopotamya",
+    "type": "ancient",
+    "chapters": [
+      78
+    ]
+  },
+  "granary": {
+    "label": "Ambar",
+    "type": "ancient",
+    "chapters": [
+      78,
+      79,
+      80
+    ]
+  },
+  "kiln": {
+    "label": "Ocak / Fırın",
+    "type": "ancient",
+    "chapters": [
+      79,
+      80
+    ]
+  },
+  "ancientStreet": {
+    "label": "Antik Sokak",
+    "type": "ancient",
+    "chapters": [
+      79
+    ]
+  },
+  "dryPlain": {
+    "label": "Kurak Ova",
+    "type": "nature",
+    "chapters": [
+      80,
+      81
+    ]
+  },
+  "hillside": {
+    "label": "Yamaç",
+    "type": "nature",
+    "chapters": [
+      81
+    ]
+  },
+  "camp": {
+    "label": "Kamp",
+    "type": "nature",
+    "chapters": [
+      81,
+      94
+    ]
+  },
+  "egyptVillage": {
+    "label": "Mısır Köyü",
+    "type": "ancient",
+    "chapters": [
+      82
+    ]
+  },
+  "quarry": {
+    "label": "Taş Ocağı",
+    "type": "nature",
+    "chapters": [
+      82
+    ]
+  },
+  "cistern": {
+    "label": "Sarnıç",
+    "type": "cave",
+    "chapters": [
+      82
+    ]
+  },
+  "tombValley": {
+    "label": "Mezar Vadisi",
+    "type": "cave",
+    "chapters": [
+      83
+    ]
+  },
+  "tomb": {
+    "label": "Mezar",
+    "type": "cave",
+    "chapters": [
+      83,
+      84
+    ]
+  },
+  "nightPath": {
+    "label": "Gece Patikası",
+    "type": "nature",
+    "chapters": [
+      83
+    ]
+  },
+  "stormShelter": {
+    "label": "Fırtına Sığınağı",
+    "type": "nature",
+    "chapters": [
+      84
+    ]
+  },
+  "dawnHill": {
+    "label": "Şafak Tepesi",
+    "type": "nature",
+    "chapters": [
+      84
+    ]
+  },
+  "ruinedSettlement": {
+    "label": "Harabe Yerleşim",
+    "type": "ancient",
+    "chapters": [
+      85
+    ]
+  },
+  "road": {
+    "label": "Yol",
+    "type": "urban",
+    "chapters": [
+      85
+    ]
+  },
+  "ancientCity": {
+    "label": "Antik Şehir",
+    "type": "ancient",
+    "chapters": [
+      86
+    ]
+  },
+  "fireStreet": {
+    "label": "Yangın Sokağı",
+    "type": "urban",
+    "chapters": [
+      86
+    ]
+  },
+  "cityGate": {
+    "label": "Şehir Kapısı",
+    "type": "urban",
+    "chapters": [
+      86
+    ]
+  },
+  "skyCamp": {
+    "label": "Gökyüzü Kampı",
+    "type": "nature",
+    "chapters": [
+      87
+    ]
+  },
+  "fireSlope": {
+    "label": "Yangın Yamacı",
+    "type": "nature",
+    "chapters": [
+      87
+    ]
+  },
+  "dryRiver": {
+    "label": "Kurumuş Nehir",
+    "type": "nature",
+    "chapters": [
+      87,
+      88
+    ]
+  },
+  "brokenBridge": {
+    "label": "Kırık Köprü",
+    "type": "nature",
+    "chapters": [
+      88
+    ]
+  },
+  "riverVillage": {
+    "label": "Nehir Köyü",
+    "type": "nature",
+    "chapters": [
+      88
+    ]
+  },
+  "ancientRoad": {
+    "label": "Antik Yol",
+    "type": "ancient",
+    "chapters": [
+      89,
+      105
+    ]
+  },
+  "caravan": {
+    "label": "Kervan",
+    "type": "ancient",
+    "chapters": [
+      89,
+      94
+    ]
+  },
+  "sandstorm": {
+    "label": "Kum Fırtınası",
+    "type": "nature",
+    "chapters": [
+      89
+    ]
+  },
+  "caveVision": {
+    "label": "Mağara Görüsü",
+    "type": "cave",
+    "chapters": [
+      90
+    ]
+  },
+  "recordCave": {
+    "label": "Kayıt Mağarası",
+    "type": "cave",
+    "chapters": [
+      91,
+      92
+    ]
+  },
+  "prisonCamp": {
+    "label": "Esir Kampı",
+    "type": "nature",
+    "chapters": [
+      92
+    ]
+  },
+  "ancientPath": {
+    "label": "Antik Patika",
+    "type": "ancient",
+    "chapters": [
+      92
+    ]
+  },
+  "nightCamp": {
+    "label": "Gece Kampı",
+    "type": "nature",
+    "chapters": [
+      93
+    ]
+  },
+  "cave": {
+    "label": "Mağara",
+    "type": "cave",
+    "chapters": [
+      93,
+      106
+    ]
+  },
+  "ridge": {
+    "label": "Dağ Sırtı",
+    "type": "nature",
+    "chapters": [
+      93
+    ]
+  },
+  "ambush": {
+    "label": "Pusu Alanı",
+    "type": "nature",
+    "chapters": [
+      94
+    ]
+  },
+  "mountainTrail": {
+    "label": "Dağ Patikası",
+    "type": "nature",
+    "chapters": [
+      95
+    ]
+  },
+  "waterCamp": {
+    "label": "Su Kampı",
+    "type": "nature",
+    "chapters": [
+      95
+    ]
+  },
+  "sidePath": {
+    "label": "Yan Patika",
+    "type": "nature",
+    "chapters": [
+      95,
+      96
+    ]
+  },
+  "boundaryLand": {
+    "label": "Sınır Arazisi",
+    "type": "nature",
+    "chapters": [
+      96
+    ]
+  },
+  "hiddenZone": {
+    "label": "Gizli Bölge",
+    "type": "abstract",
+    "chapters": [
+      96
+    ]
+  },
+  "kitchen": {
+    "label": "Mutfak",
+    "type": "home",
+    "chapters": [
+      97
+    ]
+  },
+  "baghdad": {
+    "label": "Bağdat",
+    "type": "ancient",
+    "chapters": [
+      98
+    ]
+  },
+  "burningStreet": {
+    "label": "Yanan Sokak",
+    "type": "urban",
+    "chapters": [
+      98
+    ]
+  },
+  "river": {
+    "label": "Nehir",
+    "type": "nature",
+    "chapters": [
+      98
+    ]
+  },
+  "fireCity": {
+    "label": "Yangın Şehri",
+    "type": "urban",
+    "chapters": [
+      100
+    ]
+  },
+  "burningHouse": {
+    "label": "Yanan Ev",
+    "type": "home",
+    "chapters": [
+      100
+    ]
+  },
+  "ashStreet": {
+    "label": "Kül Sokağı",
+    "type": "urban",
+    "chapters": [
+      100,
+      101
+    ]
+  },
+  "arelHouse": {
+    "label": "Arel'in Evi",
+    "type": "home",
+    "chapters": [
+      101,
+      102
+    ]
+  },
+  "villageStreet": {
+    "label": "Köy Sokağı",
+    "type": "urban",
+    "chapters": [
+      102
+    ]
+  },
+  "roadCamp": {
+    "label": "Yol Kampı",
+    "type": "nature",
+    "chapters": [
+      105
+    ]
+  },
+  "prehistoricCamp": {
+    "label": "Tarihöncesi Kamp",
+    "type": "nature",
+    "chapters": [
+      106
+    ]
+  },
+  "huntTrail": {
+    "label": "Av Patikası",
+    "type": "nature",
+    "chapters": [
+      106
+    ]
+  },
+  "prehumanCoast": {
+    "label": "İnsan Öncesi Kıyı",
+    "type": "nature",
+    "chapters": [
+      107
+    ]
+  },
+  "balcony": {
+    "label": "Balkon",
+    "type": "home",
+    "chapters": [
+      108
+    ]
+  },
+  "car": {
+    "label": "Araba",
+    "type": "transport",
+    "chapters": [
+      110,
+      111
+    ]
+  },
+  "stationReplay": {
+    "label": "İstasyon Tekrarı",
+    "type": "urban",
+    "chapters": [
+      118,
+      119
+    ]
+  },
+  "stationery": {
+    "label": "Kırtasiye",
+    "type": "work",
+    "chapters": [
+      127
+    ]
+  },
+  "storageFacility": {
+    "label": "Depo Tesisi",
+    "type": "work",
+    "chapters": [
+      132
+    ]
+  },
+  "blackArchive": {
+    "label": "Kara Arşiv",
+    "type": "abstract",
+    "chapters": [
+      133,
+      135
+    ]
+  },
+  "schoolNight": {
+    "label": "Gece Okulu",
+    "type": "urban",
+    "chapters": [
+      136,
+      140,
+      141
+    ]
+  },
+  "shore": {
+    "label": "Kıyı",
+    "type": "nature",
+    "chapters": [
+      136
+    ]
+  },
+  "hospital": {
+    "label": "Hastane",
+    "type": "work",
+    "chapters": [
+      143
+    ]
+  },
+  "funeral": {
+    "label": "Cenaze Alanı",
+    "type": "urban",
+    "chapters": [
+      144
+    ]
+  },
+  "textLayer": {
+    "label": "Metin Katmanı",
+    "type": "abstract",
+    "chapters": [
+      144
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "telkin-location-pack/1",
+  "pack": "station",
+  "version": "5.4.0",
+  "runtime": "procedural-pro",
+  "gltfRuntime": "reserved",
+  "displayName": "İstasyon Platformu",
+  "scale": "1 unit ≈ 1 meter",
+  "dimensions": [
+    22,
+    6,
+    26
+  ],
+  "zones": [
+    "platform",
+    "bench",
+    "signage",
+    "track-edge"
+  ],
+  "anchors": {
+    "spawn": [
+      0,
+      5.2
+    ],
+    "bench": [
+      -3,
+      0
+    ],
+    "sign": [
+      4,
+      -4
+    ]
+  },
+  "assetSlots": [
+    "models/station-platform.glb",
+    "audio/station.ogg"
+  ],
+  "productionNote": "Tekrar sahneleri için aynı mekân farklı ışık ve zaman koduyla yeniden kullanılabilir."
+}
