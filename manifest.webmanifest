@@ -1,11 +1,33 @@
 {
+  "id": "./",
   "name": "TELKİN — Sinematik Roman Evreni",
   "short_name": "TELKİN",
+  "description": "TELKİN sinematik roman / oyun — 144 bölüm, 3D evren ve çevrimdışı destek.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "orientation": "landscape",
   "background_color": "#030509",
   "theme_color": "#030509",
   "lang": "tr",
-  "description": "TELKİN sinematik roman / oyun — modüler GitHub sürümü; Cilt I tam roman okuyucu."
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
 }

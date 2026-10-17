@@ -1,4 +1,4 @@
-const CACHE='telkin-v6-22-2-shell-1';
+const CACHE='telkin-v6-22-3-shell-1';
 const PREFIX='telkin-';
 const NOVEL=[
   './novel/vol-1/chapter-001.json',
@@ -151,12 +151,14 @@ const SHELL=[
   './src/data/assets.js','./src/data/character-packs.js','./src/data/location-packs.js','./src/data/story.js','./src/data/locations.js','./src/data/gameplay.js','./src/data/long-play.js',
   './src/i18n/loader.js','./locales/manifest.json','./locales/tr.json','./locales/en.json','./src/novel/reader.js','./src/novel/playback.js','./src/arcade/catalog.js','./src/core/location-loader.js','./src/audio/presets.js','./src/audio/manager.js','./audio/manifest.json','./novel/index.json',
   './src/core/game.js','./src/core/rig-stub.js','./src/core/cutscene-trim.js',
-  './assets/props/door-wood.webp','./manifest.webmanifest',...NOVEL
+  './assets/props/door-wood.webp','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png',...NOVEL
 ];
 
 self.addEventListener('install',event=>{
   event.waitUntil(
-    caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())
+    caches.open(CACHE)
+      .then(cache=>Promise.allSettled(SHELL.map(url=>cache.add(url))))
+      .then(()=>self.skipWaiting())
   );
 });
 

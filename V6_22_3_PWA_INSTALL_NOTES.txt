@@ -1,0 +1,15 @@
+TELKİN v6.22.3 — PWA KURULUM DÜZELTMESİ
+
+Neden telefon “Bu uygulama yüklenemez” diyordu?
+- manifest.webmanifest içinde Chromium için gerekli uygulama ikonları tanımlı değildi.
+- Android/Chrome tarafında 192x192 ve 512x512 ikonlar yüklenebilirlik için kritik.
+- Service Worker kurulumu tek bir dosya hatasında tamamen başarısız olabilecek şekilde cache.addAll kullanıyordu.
+
+Bu pakette:
+- 192x192 PNG ikon
+- 512x512 PNG ikon
+- 512x512 maskable Android ikon
+- Güncellenmiş manifest
+- theme-color / favicon / apple-touch-icon
+- Dayanıklı Service Worker install
+- Cache v6.22.3
