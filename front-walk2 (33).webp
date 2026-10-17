@@ -1,15 +1,7 @@
-# KAYITÇI — v6.2 directional complete
+# SELİN — v6.4 yönlü paket
 
-Kayıtçı artık runtime içinde 12/12 bağımsız yön/hareket karesi kullanır.
-
-- front: idle / walk1 / walk2
-- back: idle / walk1 / walk2
-- left: idle / walk1 / walk2
-- right: idle / walk1 / walk2
-- Runtime formatı: 384×768 RGBA WebP
-- Kaynak kimlik: `../npc/kayitci.webp`
-- Karakter ilkesi: insan değil; uncanny/görevli hissi, soluk yüz ve uzun siyah palto silueti korunur.
-- Kaynak üretim atlası yalnız referans/QA içindir; oyun tarafından yüklenmez.
-- QA: `../reference/v6_2-kayitci-qa.jpg`
-
-`poses/` klasörü sonraki oyunculuk turu (talk/listen/fear/shock/grief/sit) için ayrılmıştır.
+12/12 runtime kare: front/back/left/right × idle/walk1/walk2.
+Kaynak kimlik: `assets/characters/npc/selin.webp`.
+Yeşil uzun ceket, haki üst, koyu pantolon, siyah bot ve dağınık toplu saç kimliği korunur.
+Runtime kareleri 384×768 RGBA WebP olarak normalize edilmiştir.
+Kaynak atlas runtime değildir: `assets/characters/reference/v6_4-selin-source-atlas.png`.
