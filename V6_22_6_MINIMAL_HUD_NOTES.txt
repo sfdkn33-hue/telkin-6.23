@@ -1,0 +1,14 @@
+TELKİN v6.22.6 — SİNEMATİK MİNİMAL HUD
+
+Telefon/tablet dokunmatik ekranlarında:
+- Sol üst sürüm/test kutusu gizlendi.
+- Üst mekân ve 144 bölüm bilgi şeritleri gizlendi.
+- Sağdaki büyük bölüm kimliği kutusu gizlendi.
+- WASD/oklar masaüstü yardım satırı gizlendi.
+- BÖLÜM YÜKLENİYOR rozetleri mobil kadrajdan çıkarıldı.
+- Etkileşim prompt'u hedefe yaklaşınca tek yazı olarak kalır.
+- Görev/yön ipucu uzakta küçük ve yarı saydamdır; etkileşim prompt'u çıkınca kaybolur.
+- Ayrıntılı görev bilgisi sadece Menü > GÖREVİ GÖSTER ile açılır.
+- Joystick/Koş/Etkileş/Hamburger menü ana HUD olarak kalır.
+- v6.22.4 yatay kontrol düzeltmesi ve v6.22.5 serbest bölüm seçimi korunur.
+- Service Worker cache v6.22.6 olarak yenilendi.

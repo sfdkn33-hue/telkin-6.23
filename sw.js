@@ -1,4 +1,4 @@
-const CACHE='telkin-v6-22-5-shell-1';
+const CACHE='telkin-v6-22-6-shell-1';
 const PREFIX='telkin-';
 const NOVEL=[
   './novel/vol-1/chapter-001.json',

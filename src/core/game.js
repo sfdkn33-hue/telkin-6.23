@@ -90,7 +90,7 @@ const hudMenuBtn=document.getElementById('hudMenuBtn'),hudQuickMenu=document.get
 const versionBadge=document.getElementById('versionBadge');
 const cinematicUse=document.getElementById('cinematicUse'),cinUseKicker=document.getElementById('cinUseKicker'),cinUseTitle=document.getElementById('cinUseTitle'),cinUseMeta=document.getElementById('cinUseMeta'),vfLabel=document.getElementById('vfLabel'),cinPhoneState=document.getElementById('cinPhoneState'),cinPhoneName=document.getElementById('cinPhoneName'),cinDocKicker=document.getElementById('cinDocKicker'),cinDocTitle=document.getElementById('cinDocTitle'),cinDocGoal=document.getElementById('cinDocGoal');
 let cinematicUseLastKey='';
-const storyBtn=document.getElementById('storyBtn'),storyPanel=document.getElementById('storyPanel'),storyClose=document.getElementById('storyClose'),storyPanelTitle=document.getElementById('storyPanelTitle'),storyPanelBody=document.getElementById('storyPanelBody');if(versionBadge)versionBadge.textContent='v6.22.5 · SERBEST BÖLÜM SEÇİMİ';
+const storyBtn=document.getElementById('storyBtn'),storyPanel=document.getElementById('storyPanel'),storyClose=document.getElementById('storyClose'),storyPanelTitle=document.getElementById('storyPanelTitle'),storyPanelBody=document.getElementById('storyPanelBody');if(versionBadge)versionBadge.textContent='v6.22.6 · SİNEMATİK MİNİMAL HUD';
 const chaptersBtn=document.getElementById('chaptersBtn'),chaptersPanel=document.getElementById('chaptersPanel'),chaptersClose=document.getElementById('chaptersClose');
 const volTabs=document.getElementById('volTabs'),chapterGrid=document.getElementById('chapterGrid'),chapterDetail=document.getElementById('chapterDetail');
 const chapterJumpInput=document.getElementById('chapterJumpInput'),chapterJumpGo=document.getElementById('chapterJumpGo'),inspectionBar=document.getElementById('inspectionBar'),inspectionLabel=document.getElementById('inspectionLabel'),inspectionPrev=document.getElementById('inspectionPrev'),inspectionNext=document.getElementById('inspectionNext'),inspectionReturn=document.getElementById('inspectionReturn');
@@ -4903,7 +4903,7 @@ console.info('[TELKIN v6.22.1 STAGING] KONTROL DÜZELTMESİ · JOYSTICK SOL/SAĞ
 
 function refreshRuntimeLanguage(){
  try{
-  if(versionBadge)versionBadge.textContent='v6.22.5 · SERBEST BÖLÜM SEÇİMİ';
+  if(versionBadge)versionBadge.textContent='v6.22.6 · SİNEMATİK MİNİMAL HUD';
   if(soundBtn)soundBtn.textContent=audioOn?TT('ui.soundOn','SES: AÇIK'):TT('ui.soundOff','SES: KAPALI');
   if(interact)interact.textContent=isDialogueOpen?TT('ui.continue','DEVAM'):TT('ui.interact','ETKİLEŞ');
   updateArcadeButton();
